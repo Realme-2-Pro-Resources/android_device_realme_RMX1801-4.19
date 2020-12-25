@@ -76,6 +76,7 @@ BOARD_MKBOOTIMG_ARGS += --pagesize $(BOARD_PAGE_SIZE)
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_SOURCE := kernel/realme/sdm660
 TARGET_KERNEL_CONFIG := vendor/sdm660-perf_defconfig vendor/realme/RMX1801.config
+TARGET_KERNEL_VERSION := 4.19
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
