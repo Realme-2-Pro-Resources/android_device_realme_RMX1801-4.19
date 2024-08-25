@@ -8,8 +8,8 @@
 
 set -e
 
-DEVICE=X00TD
-VENDOR=asus
+DEVICE=RMX1801
+VENDOR=realme
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"

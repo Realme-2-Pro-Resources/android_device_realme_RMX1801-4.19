@@ -15,9 +15,9 @@
 //
 
 cc_library_static {
-    name: "libinit_X00TD",
+    name: "libinit_RMX1801",
     recovery_available: true,
-    srcs: ["init_X00TD.cpp"],
+    srcs: ["init_RMX1801.cpp"],
     whole_static_libs: ["libbase"],
     include_dirs: [
         "system/core/init",

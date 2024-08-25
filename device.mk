@@ -5,7 +5,7 @@
 #
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/asus/X00TD/X00TD-vendor.mk)
+$(call inherit-product, vendor/realme/RMX1801/RMX1801-vendor.mk)
 
 # Default is nosdcard, S/W button enabled in resource
 PRODUCT_CHARACTERISTICS := nosdcard
@@ -213,7 +213,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.X00TD
+    android.hardware.light-service.RMX1801
 
 # Lineage Health
 PRODUCT_PACKAGES += \
@@ -434,7 +434,7 @@ PRODUCT_COPY_FILES += \
 
 # Touch HAL
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.X00TD
+    vendor.lineage.touch@1.0-service.RMX1801
 
 # USB
 PRODUCT_PACKAGES += \

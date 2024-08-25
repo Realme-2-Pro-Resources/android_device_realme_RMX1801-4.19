@@ -4,9 +4,9 @@
 //
 
 cc_binary {
-    name: "vendor.lineage.touch@1.0-service.X00TD",
-    init_rc: ["vendor.lineage.touch@1.0-service.X00TD.rc"],
-    vintf_fragments: ["vendor.lineage.touch@1.0-service.X00TD.xml"],
+    name: "vendor.lineage.touch@1.0-service.RMX1801",
+    init_rc: ["vendor.lineage.touch@1.0-service.RMX1801.rc"],
+    vintf_fragments: ["vendor.lineage.touch@1.0-service.RMX1801.xml"],
     defaults: ["hidl_defaults"],
     relative_install_path: "hw",
     vendor: true,

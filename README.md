@@ -1,25 +1,25 @@
-# Device Tree for Asus Zenfone Max Pro M1
-The Asus Zenfone Max Pro M1 (codenamed _"ASUS_X00TD"_) is a mid-range smartphone from Asus.
-It was announced in April 2018 and released in May 2018.
+Device Tree for Realme 2 Pro
+===========================================
+
+The Realme 2 Pro (codenamed _"RMX1801"_) is a mid-range smartphone from Realme.
+It was announced in September 2018
 
 ## Device specifications
 
-| Device                  | Asus Zenfone Max Pro M1                                     |
-| ----------------------- | :---------------------------------------------------------- |
-| SoC                     | Qualcomm SDM660 Snapdragon 636                              |
-| CPU                     | 8x Qualcomm® Kryo™ 260 CPU                                  |
-| GPU                     | Adreno 509                                                  |
-| Memory                  | 3GB / 4GB RAM / 6GB (LPDDR4X)                               |
-| Shipped Android version | 8.1.0                                                       |
-| Storage                 | 64GB eMMC 5.1 flash storage                                 |
-| MicroSD                 | Up to 2 TB                                                  |
-| Battery                 | Non-removable Li-Po 5000 mAh                                |
-| Dimensions              | 159 x 76 x 8.5 mm                                           |
-| Display                 | 2160 x 1080 (18:9), 5.99 inch                               |
-| Rear camera 1           | 13MP, 1.12-micron pixels, f/2.2 Dual LED flash              |
-| Rear camera 2           | 5MP, 1.12-micron pixels, f/2.4                              |
-| Front camera            | 8MP, 1-micron pixels, f/2.2 1080p 30 fps video, Selfie-light|
+Basic   | Spec Sheet
+-------:|:-------------------------
+CPU     | Octa-core (4x2.0 GHz Kryo 260 & 4x1.8 GHz Kryo 260)
+Chipset | Qualcomm SDM660 Snapdragon 660
+GPU     | Adreno 512
+Memory  | 4GB /6GB / 8GB RAM
+Shipped Android Version | 8.1
+Storage | 64GB emmc / 128GB UFS
+MicroSD | Up to 256GB
+Battery | Non-removable Li-Ion 3500 mAh battery
+Display | 1080 x 2340 pixels, 19.5:9 ratio (~409 ppi density)
+Camera (Rear)  | 16 MP, f/1.7, 1/2.8", 1.12µm, PDAF + 2 MP, depth sensor, LED flash, HDR
+Camera (Front)  | 16 MP, f/2.0, HDR
 
 ## Device picture
 
-![Asus Zenfone Max Pro M1](https://i-cdn.phonearena.com/images/articles/320775-image/Asus-ZenFone-Max-Pro-M1.jpg)
+![Realme 2 Pro](https://static.realme.net/page/realme2pro/images/sec-banner-phone-02c8a9576e.png "Realme 2 Pro")

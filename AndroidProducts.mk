@@ -5,7 +5,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_X00TD.mk
+    $(LOCAL_DIR)/lineage_RMX1801.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_X00TD-userdebug
+    lineage_RMX1801-userdebug
