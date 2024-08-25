@@ -46,9 +46,6 @@ vendor.vidc.enc.disable.pq=true
 # Netflix
 ro.netflix.bsp_rev=Q660-13149-1
 
-# NFC
-ro.nfc.port=I2C
-
 # NTP Server
 persist.backup.ntpServer="0.pool.ntp.org"
 

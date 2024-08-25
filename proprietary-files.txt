@@ -1037,9 +1037,6 @@ vendor/lib/libOmxG711Dec.so|f47740d8612b46c1072ab7987631c73bb7608f80
 vendor/lib/libOmxQcelp13Dec.so|66e3fe30360958c0521b29e4675933750596835a
 vendor/lib/libOmxWmaDec.so|1865d719564d995e44cd0520a15e44b1c01b34f0
 
-# NFC - from X01BD UL-ASUS_X01BD-WW-17.2018.2012.434-user
-vendor/lib/libpn553_fw.so
-
 # Perf - from Honeywell hon660-user-12-94.00.03-0037-release-keys
 vendor/bin/msm_irqbalance|33325d1b5bd1c4fdfa964f638da633ef8ca1ac43
 
