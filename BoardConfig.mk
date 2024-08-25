@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-COMMON_PATH := device/asus/sdm660-common
+DEVICE_PATH := device/asus/X00TD
 
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
@@ -22,6 +22,10 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a73
 
+# Assert
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
+TARGET_OTA_ASSERT_DEVICE := ASUS_X00TD,X00TD,X00T
+
 # Audio
 AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER := true
 AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
@@ -34,6 +38,7 @@ BOARD_USES_ALSA_AUDIO := true
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
 # Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := sdm636
 TARGET_NO_BOOTLOADER := true
 
 # Camera
@@ -49,7 +54,7 @@ TARGET_USES_QTI_MAPPER_2_0 := true
 TARGET_USES_QTI_MAPPER_EXTENSIONS_1_1 := true
 
 # Filesystem
-TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 androidboot.console=ttyMSM0
@@ -63,6 +68,7 @@ BOARD_KERNEL_BASE        := 0x00000000
 BOARD_KERNEL_PAGESIZE    := 4096
 BOARD_KERNEL_IMAGE_NAME  := Image.gz-dtb
 
+TARGET_KERNEL_CONFIG := vendor/X00TD_defconfig vendor/debugfs.config
 TARGET_KERNEL_SOURCE := kernel/asus/sdm660
 TARGET_KERNEL_VERSION := 4.19
 
@@ -72,20 +78,20 @@ LOC_HIDL_VERSION := 4.0
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    $(COMMON_PATH)/configs/vintf/framework_compatibility_matrix.xml \
+    $(DEVICE_PATH)/configs/vintf/framework_compatibility_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix_legacy.xml \
     vendor/lineage/config/device_framework_matrix.xml
-DEVICE_FRAMEWORK_MANIFEST_FILE := $(COMMON_PATH)/configs/vintf/framework_manifest.xml
-DEVICE_MANIFEST_FILE := $(COMMON_PATH)/configs/vintf/manifest.xml
-DEVICE_MATRIX_FILE := $(COMMON_PATH)/configs/vintf/compatibility_matrix.xml
+DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/framework_manifest.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 
 ODM_MANIFEST_SKUS += NFC
-ODM_MANIFEST_NFC_FILES := $(COMMON_PATH)/configs/vintf/manifest_nfc.xml
+ODM_MANIFEST_NFC_FILES := $(DEVICE_PATH)/configs/vintf/manifest_nfc.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):libinit_sdm660
-TARGET_RECOVERY_DEVICE_MODULES := libinit_sdm660
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_X00TD
+TARGET_RECOVERY_DEVICE_MODULES := libinit_X00TD
 
 # Lineage Health
 TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
@@ -126,21 +132,21 @@ TARGET_ENFORCES_QSSI := true
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 
 # Properties
-TARGET_ODM_PROP += $(COMMON_PATH)/configs/properties/odm.prop
-TARGET_PRODUCT_PROP += $(COMMON_PATH)/configs/properties/product.prop
-TARGET_SYSTEM_PROP += $(COMMON_PATH)/configs/properties/system.prop
-TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/configs/properties/system_ext.prop
-TARGET_VENDOR_PROP += $(COMMON_PATH)/configs/properties/vendor.prop
+TARGET_ODM_PROP += $(DEVICE_PATH)/configs/properties/odm.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/properties/product.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/properties/system.prop
+TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/configs/properties/system_ext.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/properties/vendor.prop
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # Releasetools
 TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_asus
-TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
+TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
@@ -149,11 +155,11 @@ ENABLE_VENDOR_RIL_SERVICE := true
 include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 
-BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
-PRODUCT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+PRODUCT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 
 # Soong namespaces
-PRODUCT_SOONG_NAMESPACES += $(COMMON_PATH)
+PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
 # Treble
 BOARD_VNDK_VERSION := current
@@ -181,4 +187,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the proprietary files
-include vendor/asus/sdm660-common/BoardConfigVendor.mk
+include vendor/asus/X00TD/BoardConfigVendor.mk

@@ -5,7 +5,7 @@
 #
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/asus/sdm660-common/sdm660-common-vendor.mk)
+$(call inherit-product, vendor/asus/X00TD/X00TD-vendor.mk)
 
 # Default is nosdcard, S/W button enabled in resource
 PRODUCT_CHARACTERISTICS := nosdcard
@@ -65,6 +65,10 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2160
+TARGET_SCREEN_WIDTH := 1080
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -209,7 +213,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.asus_sdm660
+    android.hardware.light-service.X00TD
 
 # Lineage Health
 PRODUCT_PACKAGES += \
@@ -322,6 +326,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.power-service.lineage-libperfmgr
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/perf/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
 # Public Libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/misc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
@@ -370,6 +377,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.qcom.asus.rc \
+    init.device.rc \
     init.qcom.power.rc \
     init.qcom.rc \
     init.recovery.qcom.rc \
@@ -420,9 +428,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
+# Thermal configs
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/thermal/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
+
 # Touch HAL
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.asus_sdm660
+    vendor.lineage.touch@1.0-service.X00TD
 
 # USB
 PRODUCT_PACKAGES += \
@@ -432,11 +444,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service
 
+# VNDK
 # FIXME: master: compat for libprotobuf
 # See https://android-review.googlesource.com/c/platform/prebuilts/vndk/v28/+/1109518
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \
     libprotobuf-cpp-lite-vendorcompat
+
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-sp/libhidlbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidlbase-v32.so
 
 # VR
 PRODUCT_PACKAGES += \
