@@ -216,8 +216,8 @@ PRODUCT_PACKAGES += \
     android.hardware.light-service.RMX1801
 
 # Lineage Health
-PRODUCT_PACKAGES += \
-    vendor.lineage.health-service.default
+# PRODUCT_PACKAGES += \
+#     vendor.lineage.health-service.default
 
 # LiveDisplay native
 PRODUCT_PACKAGES += \
@@ -410,8 +410,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
 
 # Touch HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.RMX1801
+# PRODUCT_PACKAGES += \
+#     vendor.lineage.touch@1.0-service.RMX1801
 
 # USB
 PRODUCT_PACKAGES += \
