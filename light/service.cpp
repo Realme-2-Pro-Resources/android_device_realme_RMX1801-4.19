@@ -1,90 +1,50 @@
 /*
- * Copyright (C) 2023 The LineageOS Project
+ * Copyright (C) 2018 The LineageOS Project
  *
- * SPDX-License-Identifier: Apache-2.0
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.light-service.RMX1801"
+#define LOG_TAG "android.hardware.light@2.0-service.RMX1801"
 
-#include <android/binder_manager.h>
-#include <android/binder_process.h>
-#include <android-base/logging.h>
-#include <sys/stat.h>
-#include <sys/types.h>
-#include <unistd.h>
+#include <hidl/HidlTransportSupport.h>
 
-#include "Lights.h"
+#include "Light.h"
 
-using aidl::android::hardware::light::Lights;
+using android::hardware::configureRpcThreadpool;
+using android::hardware::joinRpcThreadpool;
 
-// LCD
-const static std::string kLcdBacklightPath = "/sys/class/leds/lcd-backlight/brightness";
-const static std::string kLcdMaxBacklightPath = "/sys/class/leds/lcd-backlight/max_brightness";
+using android::hardware::light::V2_0::ILight;
+using android::hardware::light::V2_0::implementation::Light;
 
-// Red led
-const static std::string kRedBreathPath = "/sys/class/leds/red/breath";
-const static std::string kRedLedPath = "/sys/class/leds/red/brightness";
-
-// Green led
-const static std::string kGreenBreathPath = "/sys/class/leds/green/breath";
-const static std::string kGreenLedPath = "/sys/class/leds/green/brightness";
+using android::OK;
+using android::sp;
+using android::status_t;
 
 int main() {
-    uint32_t lcdMaxBrightness = 255;
+    sp<ILight> service = new Light();
 
-    std::ofstream lcdBacklight(kLcdBacklightPath);
-    if (!lcdBacklight) {
-        LOG(ERROR) << "Failed to open " << kLcdBacklightPath << ", error=" << errno << " ("
-                   << strerror(errno) << ")";
-        return -errno;
+    configureRpcThreadpool(1, true);
+
+    status_t status = service->registerAsService();
+    if (status != OK) {
+        ALOGE("Cannot register Light HAL service.");
+        return 1;
     }
 
-    std::ifstream lcdMaxBacklight(kLcdMaxBacklightPath);
-    if (!lcdMaxBacklight) {
-        LOG(ERROR) << "Failed to open " << kLcdMaxBacklightPath << ", error=" << errno << " ("
-                   << strerror(errno) << ")";
-        return -errno;
-    } else {
-        lcdMaxBacklight >> lcdMaxBrightness;
-    }
+    ALOGI("Light HAL service ready.");
 
-    std::ofstream redBreath(kRedBreathPath);
-    if (!redBreath) {
-        LOG(ERROR) << "Failed to open " << kRedBreathPath << ", error=" << errno << " ("
-                   << strerror(errno) << ")";
-        return -errno;
-    }
+    joinRpcThreadpool();
 
-    std::ofstream redLed(kRedLedPath);
-    if (!redLed) {
-        LOG(ERROR) << "Failed to open " << kRedLedPath << ", error=" << errno << " ("
-                   << strerror(errno) << ")";
-        return -errno;
-    }
-
-    std::ofstream greenBreath(kGreenBreathPath);
-    if (!greenBreath) {
-        LOG(ERROR) << "Failed to open " << kGreenBreathPath << ", error=" << errno << " ("
-                   << strerror(errno) << ")";
-        return -errno;
-    }
-
-    std::ofstream greenLed(kGreenLedPath);
-    if (!greenLed) {
-        LOG(ERROR) << "Failed to open " << kGreenLedPath << ", error=" << errno << " ("
-                   << strerror(errno) << ")";
-        return -errno;
-    }
-
-    ABinderProcess_setThreadPoolMaxThreadCount(0);
-    std::shared_ptr<Lights> lights = ndk::SharedRefBase::make<Lights>(
-            std::make_pair(std::move(lcdBacklight), lcdMaxBrightness), std::move(redBreath),
-                  std::move(redLed), std::move(greenBreath), std::move(greenLed));
-
-    const std::string instance = std::string() + Lights::descriptor + "/default";
-    binder_status_t status = AServiceManager_addService(lights->asBinder().get(), instance.c_str());
-    CHECK(status == STATUS_OK);
-
-    ABinderProcess_joinThreadPool();
-    return EXIT_FAILURE; // should not reach
+    ALOGI("Light HAL service failed to join thread pool.");
+    return 1;
 }
