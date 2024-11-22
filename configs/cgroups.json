@@ -22,14 +22,6 @@
       "GID": "system"
     },
     {
-      "Controller": "memory",
-      "Path": "/dev/memcg",
-      "Mode": "0700",
-      "UID": "root",
-      "GID": "system",
-      "Optional": true
-    },
-    {
       "Controller": "schedtune",
       "Path": "/dev/stune",
       "Mode": "0755",
@@ -46,6 +38,13 @@
       {
         "Controller": "freezer",
         "Path": "."
+      },
+      {
+        "Controller": "memory",
+        "Path": ".",
+        "NeedsActivation": true,
+        "MaxActivationDepth": 0,
+        "Optional": true
       }
     ]
   }
