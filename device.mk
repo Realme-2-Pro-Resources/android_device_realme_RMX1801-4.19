@@ -34,6 +34,7 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
     AvoidAppsInCutoutOverlay \
+    NcmTetheringOverlay \
     NoCutoutOverlay
 
 # Soong namespaces
