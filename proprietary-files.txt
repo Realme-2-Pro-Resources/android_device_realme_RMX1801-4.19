@@ -2941,7 +2941,7 @@ vendor/lib64/libqmi_common_so.so|d817b576a054dd91e8e4346d73e6d635d221bfde
 vendor/lib64/libqmi_csi.so|7e19c2266b7f63f3f9e69c039b1446acd460231b
 vendor/lib64/libqmi_encdec.so|a18bb21e5b9b53e3dc8dc45f6e7e65e32a467607
 vendor/lib64/libqmi_legacy.so|f324c6701ecf78ff50975c0bc7f99aea09cb3539
-vendor/lib64/libqmiservices.so|52770edf3e35f5376f3d0a131636f3213c9e59fa
+vendor/lib64/libqmiservices.so|52770edf3e35f5376f3d0a131636f3213c9e59fa|e159ca743e6c7904a405ce64af0b7448be31c007
 
 # Qseecom - from helios-user 14 14-35-10.00-UG-U04-STD-HEL-04 44 release-keys
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service|a923b55ee6799bf299e8bf74707fceca6cb8184d
@@ -3006,7 +3006,7 @@ vendor/lib64/libqcrilFramework.so|dc62bd4f3685c420d43f4f5f4141d5908212df86
 vendor/lib64/libqcrildatactl.so|612f31db78dd262a349c093c1a5071e4fd89450d
 vendor/lib64/libqrtr.so|b22ee7df87b35ba88b518f0b821cc601cd612183
 vendor/lib64/libqsocket.so|3fa01c9aff6ed96a5ea9886c7696a046c929e339
-vendor/lib64/libril-qc-hal-qmi.so|73cb43f5628dd2536d6c3a3a0ec047225fcbe4cc
+vendor/lib64/libril-qc-hal-qmi.so|73cb43f5628dd2536d6c3a3a0ec047225fcbe4cc|11b544bc0b70bcce47688e983ef5778833a27170
 vendor/lib64/libril-qc-logger.so|5622a5aa1eb7fc6c6241c0033e27272084d235c6
 vendor/lib64/libril-qc-ltedirectdisc.so|b3990ccf919b742b9a756654bfaf9d23682ff1db
 vendor/lib64/libril-qc-radioconfig.so|3d5f05676715998eecb3f19642f24d867e4e5f6a
@@ -3061,7 +3061,6 @@ vendor/bin/ims_rtp_daemon|fbec6a715d54e31c3833799386f8954b1b83b1d1
 vendor/bin/imsdatadaemon|36738383eb8e711adf94f1bc09dee50b78c747f6
 vendor/bin/imsqmidaemon|5fde955e71392479b2f3e6aaf6005fa54b618678
 vendor/bin/imsrcsd|bf29aac14856f29268c01599e5f6c7c6ae520685
-vendor/bin/rmt_storage|4a78e4d97bac1cf2c5ae5d28b58f14b1c127aa82
 vendor/etc/init/ims_rtp_daemon_legacy.rc|104b2a879db4d3dd44e74a3d7f6e69f6972c9129
 vendor/etc/init/imsdatadaemon.rc|29face37c174aebcd1358f7d7ad0bd4baf83063b
 vendor/etc/init/imsqmidaemon.rc|dda16d842b7c65296e97bc9921b723a43b152ba3
@@ -3105,6 +3104,9 @@ vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so|91521d031060612dbf53d4a6437eba56780
 vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so|bd0db76d555c51971dcfcce62d981f987af32811
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so|a5f9d28f7adbfbf349e6f5bc210c651c78ed776e
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE_SUFFIX=_vendor|460e589128fce0b0e83bb3c75aa32f7e1a9494fd
+
+# Remote storage
+vendor/bin/rmt_storage
 
 # SCVE
 vendor/etc/scve/facereco/gModel.dat

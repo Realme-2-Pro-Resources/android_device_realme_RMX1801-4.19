@@ -276,7 +276,8 @@ PRODUCT_COPY_FILES += \
 
 # QMI
 PRODUCT_PACKAGES += \
-    libqti_vndfwk_detect.vendor
+    libqti_vndfwk_detect.vendor \
+    rfsa_daemon
 
 # Radio
 PRODUCT_PACKAGES += \
