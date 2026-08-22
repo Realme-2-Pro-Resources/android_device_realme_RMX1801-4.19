@@ -1,4 +1,7 @@
 soong_namespace {
+    imports: [
+        "vendor/realme/RMX1801",
+    ],
 }
 
 install_symlink {
