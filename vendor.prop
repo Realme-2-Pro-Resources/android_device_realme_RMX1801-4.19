@@ -204,6 +204,7 @@ zygote.critical_window.minute=10
 # USB
 persist.vendor.usb.config.extra=none
 vendor.usb.controller=a800000.dwc3
+vendor.usb.device=a800000.ssusb
 vendor.usb.diag.func.name=diag
 vendor.usb.dpl.inst.name=dpl
 vendor.usb.qdss.inst.name=qdss
