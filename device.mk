@@ -192,12 +192,14 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.qti_recovery
 
 # Init
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/qcom/opensource/usb/etc
+
 $(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_realme)
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.class_main.sh \
-    init.msm.usb.configfs.rc \
     init.oppo.rc \
     init.qcom.class_core.sh \
     init.qcom.early_boot.sh \
