@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "FrameworkResOverlayR11s",
+    name: "FrameworkResOverlayRMX1801",
     vendor: true,
 }

@@ -1,44 +1,26 @@
-# All blobs from R11s-user 9 PKQ1.190414.001 eng.root.20200522.190302 release-keys, unless pinned
+# All blobs from RMX1801-user 10 QKQ1.191014.001 eng.root.20201016.161857 release-keys, unless pinned
 
 # ACDBs
-vendor/etc/acdbdata/17011/Bluetooth_cal.acdb
-vendor/etc/acdbdata/17011/General_cal.acdb
-vendor/etc/acdbdata/17011/Global_cal.acdb
-vendor/etc/acdbdata/17011/Handset_cal.acdb
-vendor/etc/acdbdata/17011/Hdmi_cal.acdb
-vendor/etc/acdbdata/17011/Headset_cal.acdb
-vendor/etc/acdbdata/17011/Speaker_cal.acdb
-vendor/etc/acdbdata/17021/Bluetooth_cal.acdb
-vendor/etc/acdbdata/17021/General_cal.acdb
-vendor/etc/acdbdata/17021/Global_cal.acdb
-vendor/etc/acdbdata/17021/Handset_cal.acdb
-vendor/etc/acdbdata/17021/Hdmi_cal.acdb
-vendor/etc/acdbdata/17021/Headset_cal.acdb
-vendor/etc/acdbdata/17021/Speaker_cal.acdb
-
-# Camera - device-specific 3A and its MCT loader, from R11s C.19 stock
-vendor/lib/libmmcamera2_mct_shimlayer.so
-vendor/lib/libmmcamera2_q3a_core.so
-vendor/lib/libmmcamera2_stats_modules.so
+vendor/etc/acdbdata/18321/Bluetooth_cal.acdb
+vendor/etc/acdbdata/18321/General_cal.acdb
+vendor/etc/acdbdata/18321/Global_cal.acdb
+vendor/etc/acdbdata/18321/Handset_cal.acdb
+vendor/etc/acdbdata/18321/Hdmi_cal.acdb
+vendor/etc/acdbdata/18321/Headset_cal.acdb
+vendor/etc/acdbdata/18321/Speaker_cal.acdb
 
 # Camera (actuators)
 vendor/lib/libactuator_ad5816g.so
 vendor/lib/libactuator_ad5823.so
 vendor/lib/libactuator_ak7345.so
 vendor/lib/libactuator_ak7371.so
-vendor/lib/libactuator_ak7374_imx350.so
 vendor/lib/libactuator_ak7374_imx376k.so
-vendor/lib/libactuator_ak7374_imx398.so
-vendor/lib/libactuator_ak7374_s5k2p7sq.so
 vendor/lib/libactuator_ak7374_s5k2t7sm.so
-vendor/lib/libactuator_ak7374b0_s5k2p7sq.so
-vendor/lib/libactuator_ak7374b0_s5k2t7sm.so
 vendor/lib/libactuator_bu64244gwz.so
 vendor/lib/libactuator_bu64297.so
 vendor/lib/libactuator_dw9714.so
 vendor/lib/libactuator_dw9716.so
 vendor/lib/libactuator_dw9718s.so
-vendor/lib/libactuator_dw9718s_imx350.so
 vendor/lib/libactuator_dw9718s_imx376k.so
 vendor/lib/libactuator_dw9718s_imx398.so
 vendor/lib/libactuator_dw9718s_imx398t.so
@@ -51,11 +33,6 @@ vendor/lib/libactuator_lc898122.so
 vendor/lib/libactuator_lc898212xd.so
 vendor/lib/libactuator_lc898212xd_qc2002.so
 vendor/lib/libactuator_lc898217xc.so
-vendor/lib/libactuator_lc898217xc_imx350.so
-vendor/lib/libactuator_lc898217xc_imx376k.so
-vendor/lib/libactuator_lc898217xc_imx398.so
-vendor/lib/libactuator_lc898217xc_s5k2p7sq.so
-vendor/lib/libactuator_lc898217xc_s5k2t7sx.so
 vendor/lib/libactuator_pseudo.so
 vendor/lib/libactuator_rohm_bu64243gwz.so
 
@@ -653,67 +630,34 @@ vendor/lib/libchromatix_imx371_snapshot_fb_rm.so
 vendor/lib/libchromatix_imx371_snapshot_rm.so
 vendor/lib/libchromatix_imx371_snapshot_wchat.so
 vendor/lib/libchromatix_imx376_common.so
-vendor/lib/libchromatix_imx376_common_engineermode_binning.so
-vendor/lib/libchromatix_imx376_common_engineermode_fullsize.so
 vendor/lib/libchromatix_imx376_common_faceunlock.so
 vendor/lib/libchromatix_imx376_cpp_liveshot.so
 vendor/lib/libchromatix_imx376_cpp_preview.so
-vendor/lib/libchromatix_imx376_cpp_preview_1080p.so
-vendor/lib/libchromatix_imx376_cpp_preview_480p.so
-vendor/lib/libchromatix_imx376_cpp_preview_720p.so
 vendor/lib/libchromatix_imx376_cpp_preview_faceunlock_480p.so
-vendor/lib/libchromatix_imx376_cpp_preview_fb.so
 vendor/lib/libchromatix_imx376_cpp_snapshot.so
-vendor/lib/libchromatix_imx376_cpp_snapshot_5m.so
-vendor/lib/libchromatix_imx376_cpp_snapshot_5m_fb.so
-vendor/lib/libchromatix_imx376_cpp_snapshot_5m_flash.so
 vendor/lib/libchromatix_imx376_cpp_snapshot_5m_hdr.so
 vendor/lib/libchromatix_imx376_cpp_snapshot_5m_hdr_face.so
-vendor/lib/libchromatix_imx376_cpp_snapshot_5m_multiframe.so
-vendor/lib/libchromatix_imx376_cpp_snapshot_5m_multiframe_fb.so
 vendor/lib/libchromatix_imx376_cpp_snapshot_5m_multiframe_fb_less.so
-vendor/lib/libchromatix_imx376_cpp_snapshot_5m_multiframe_flash.so
 vendor/lib/libchromatix_imx376_cpp_snapshot_5m_multiframe_less.so
-vendor/lib/libchromatix_imx376_cpp_snapshot_5m_otherapk.so
-vendor/lib/libchromatix_imx376_cpp_snapshot_fb.so
 vendor/lib/libchromatix_imx376_cpp_video.so
 vendor/lib/libchromatix_imx376_default_preview_3a.so
-vendor/lib/libchromatix_imx376_default_preview_3a_faceunlock.so
-vendor/lib/libchromatix_imx376_default_preview_3a_faceunlock_jdi.so
 vendor/lib/libchromatix_imx376_default_preview_3a_faceunlock_lens3962.so
-vendor/lib/libchromatix_imx376_default_preview_3a_fb.so
-vendor/lib/libchromatix_imx376_default_preview_3a_fb_jdi.so
 vendor/lib/libchromatix_imx376_default_preview_3a_fb_lens3962.so
-vendor/lib/libchromatix_imx376_default_preview_3a_jdi.so
 vendor/lib/libchromatix_imx376_default_preview_3a_lens3962.so
-vendor/lib/libchromatix_imx376_default_preview_3a_panorama.so
-vendor/lib/libchromatix_imx376_default_preview_3a_panorama_jdi.so
 vendor/lib/libchromatix_imx376_default_preview_3a_panorama_lens3962.so
-vendor/lib/libchromatix_imx376_default_preview_3a_wchat.so
-vendor/lib/libchromatix_imx376_default_preview_3a_wchat_jdi.so
 vendor/lib/libchromatix_imx376_default_preview_3a_wchat_lens3962.so
 vendor/lib/libchromatix_imx376_default_video_3a.so
-vendor/lib/libchromatix_imx376_default_video_3a_jdi.so
 vendor/lib/libchromatix_imx376_default_video_3a_lens3962.so
-vendor/lib/libchromatix_imx376_engineermode_binning_preview_3a.so
 vendor/lib/libchromatix_imx376_engineermode_binning_preview_3a_lens3962.so
-vendor/lib/libchromatix_imx376_engineermode_fullsize_preview_3a.so
 vendor/lib/libchromatix_imx376_engineermode_fullsize_preview_3a_lens3962.so
 vendor/lib/libchromatix_imx376_fullsize_preview_3a.so
-vendor/lib/libchromatix_imx376_fullsize_preview_3a_fb.so
-vendor/lib/libchromatix_imx376_fullsize_preview_3a_fb_jdi.so
 vendor/lib/libchromatix_imx376_fullsize_preview_3a_fb_lens3962.so
-vendor/lib/libchromatix_imx376_fullsize_preview_3a_jdi.so
 vendor/lib/libchromatix_imx376_fullsize_preview_3a_lens3962.so
 vendor/lib/libchromatix_imx376_fullsize_video_3a.so
-vendor/lib/libchromatix_imx376_fullsize_video_3a_jdi.so
 vendor/lib/libchromatix_imx376_fullsize_video_3a_lens3962.so
 vendor/lib/libchromatix_imx376_postproc.so
 vendor/lib/libchromatix_imx376_preview_faceunlock.so
 vendor/lib/libchromatix_imx376_snapshot.so
-vendor/lib/libchromatix_imx376_snapshot_engineermode.so
-vendor/lib/libchromatix_imx376_snapshot_fb.so
-vendor/lib/libchromatix_imx376_snapshot_wchat.so
 vendor/lib/libchromatix_imx376k_common.so
 vendor/lib/libchromatix_imx376k_common_engineermode_binning.so
 vendor/lib/libchromatix_imx376k_common_engineermode_binning_ofilm.so
@@ -1048,6 +992,7 @@ vendor/lib/libchromatix_imx398t_3a_zsl_preview_half_portrait_ofilm.so
 vendor/lib/libchromatix_imx398t_3a_zsl_preview_ofilm.so
 vendor/lib/libchromatix_imx398t_3a_zsl_preview_ofilm_engineer.so
 vendor/lib/libchromatix_imx398t_3a_zsl_preview_ofilm_rm.so
+vendor/lib/libchromatix_imx398t_3a_zsl_preview_ofilm_superlowlight.so
 vendor/lib/libchromatix_imx398t_3a_zsl_preview_panorama_ofilm.so
 vendor/lib/libchromatix_imx398t_3a_zsl_preview_professional_ofilm.so
 vendor/lib/libchromatix_imx398t_4k_video_cpp.so
@@ -1084,6 +1029,7 @@ vendor/lib/libchromatix_imx398t_isp_zsl_snapshot_panorama.so
 vendor/lib/libchromatix_imx398t_isp_zsl_snapshot_professional.so
 vendor/lib/libchromatix_imx398t_isp_zsl_snapshot_professional_17021.so
 vendor/lib/libchromatix_imx398t_isp_zsl_snapshot_rm.so
+vendor/lib/libchromatix_imx398t_isp_zsl_snapshot_superlowlight.so
 vendor/lib/libchromatix_imx398t_postproc.so
 vendor/lib/libchromatix_imx398t_preview_1080p_cpp.so
 vendor/lib/libchromatix_imx398t_preview_420p_cpp.so
@@ -1101,10 +1047,13 @@ vendor/lib/libchromatix_imx398t_zsl_custom_3264x2448_cpp.so
 vendor/lib/libchromatix_imx398t_zsl_custom_cpp.so
 vendor/lib/libchromatix_imx398t_zsl_custom_cpp_full_portrait.so
 vendor/lib/libchromatix_imx398t_zsl_custom_cpp_half_portrait.so
+vendor/lib/libchromatix_imx398t_zsl_custom_superlowlight_cpp.so
 vendor/lib/libchromatix_imx398t_zsl_face_cpp.so
 vendor/lib/libchromatix_imx398t_zsl_face_cpp_full_portrait.so
 vendor/lib/libchromatix_imx398t_zsl_face_cpp_half_portrait.so
+vendor/lib/libchromatix_imx398t_zsl_face_custom_superlowlight_cpp.so
 vendor/lib/libchromatix_imx398t_zsl_face_multiframe_cpp.so
+vendor/lib/libchromatix_imx398t_zsl_face_superlowlight_cpp.so
 vendor/lib/libchromatix_imx398t_zsl_flash_cpp.so
 vendor/lib/libchromatix_imx398t_zsl_less_cpp.so
 vendor/lib/libchromatix_imx398t_zsl_preview_3264x2448_cpp.so
@@ -1112,6 +1061,7 @@ vendor/lib/libchromatix_imx398t_zsl_preview_cpp.so
 vendor/lib/libchromatix_imx398t_zsl_preview_cpp_full_portrait.so
 vendor/lib/libchromatix_imx398t_zsl_preview_cpp_panorama.so
 vendor/lib/libchromatix_imx398t_zsl_preview_professional_cpp.so
+vendor/lib/libchromatix_imx398t_zsl_preview_superlowlight_cpp.so
 vendor/lib/libchromatix_imx398t_zsl_snapshot_3264x2448_cpp.so
 vendor/lib/libchromatix_imx398t_zsl_snapshot_cpp.so
 vendor/lib/libchromatix_imx398t_zsl_snapshot_cpp_full_portrait.so
@@ -1122,6 +1072,7 @@ vendor/lib/libchromatix_imx398t_zsl_snapshot_cpp_hdr_face.so
 vendor/lib/libchromatix_imx398t_zsl_snapshot_cpp_panorama.so
 vendor/lib/libchromatix_imx398t_zsl_snapshot_professional_cpp.so
 vendor/lib/libchromatix_imx398t_zsl_snapshot_professional_cpp_17021.so
+vendor/lib/libchromatix_imx398t_zsl_snapshot_superlowlight_cpp.so
 vendor/lib/libchromatix_imx398t_zsl_zoom_cpp.so
 vendor/lib/libchromatix_imx398t_zsl_zoom_cpp_17021.so
 vendor/lib/libchromatix_imx476_common.so
@@ -1650,46 +1601,31 @@ vendor/lib/libchromatix_s5k2l7sx_video_4k.so
 vendor/lib/libchromatix_s5k2l7sx_zsl_preview_3a.so
 vendor/lib/libchromatix_s5k2l7sx_zsl_video_3a.so
 vendor/lib/libchromatix_s5k2p7sq_3a_1080p_video.so
-vendor/lib/libchromatix_s5k2p7sq_3a_1080p_video_ak7374b0.so
 vendor/lib/libchromatix_s5k2p7sq_3a_1080p_video_sunny.so
 vendor/lib/libchromatix_s5k2p7sq_3a_4k_video.so
-vendor/lib/libchromatix_s5k2p7sq_3a_4k_video_ak7374b0.so
 vendor/lib/libchromatix_s5k2p7sq_3a_4k_video_engineer.so
-vendor/lib/libchromatix_s5k2p7sq_3a_4k_video_engineer_ak7374b0.so
 vendor/lib/libchromatix_s5k2p7sq_3a_4k_video_engineer_sunny.so
 vendor/lib/libchromatix_s5k2p7sq_3a_4k_video_sunny.so
 vendor/lib/libchromatix_s5k2p7sq_3a_default_preview_binning.so
-vendor/lib/libchromatix_s5k2p7sq_3a_default_preview_binning_ak7374b0.so
 vendor/lib/libchromatix_s5k2p7sq_3a_default_preview_binning_sunny.so
 vendor/lib/libchromatix_s5k2p7sq_3a_default_video_binning.so
-vendor/lib/libchromatix_s5k2p7sq_3a_default_video_binning_ak7374b0.so
 vendor/lib/libchromatix_s5k2p7sq_3a_default_video_binning_sunny.so
 vendor/lib/libchromatix_s5k2p7sq_3a_special_16_9_preview.so
-vendor/lib/libchromatix_s5k2p7sq_3a_special_16_9_preview_ak7374b0.so
 vendor/lib/libchromatix_s5k2p7sq_3a_special_16_9_preview_sunny.so
 vendor/lib/libchromatix_s5k2p7sq_3a_special_preview.so
-vendor/lib/libchromatix_s5k2p7sq_3a_special_preview_ak7374b0.so
 vendor/lib/libchromatix_s5k2p7sq_3a_special_preview_sunny.so
 vendor/lib/libchromatix_s5k2p7sq_3a_wechat_preview.so
-vendor/lib/libchromatix_s5k2p7sq_3a_wechat_preview_ak7374b0.so
 vendor/lib/libchromatix_s5k2p7sq_3a_wechat_preview_sunny.so
 vendor/lib/libchromatix_s5k2p7sq_3a_zsl_preview.so
 vendor/lib/libchromatix_s5k2p7sq_3a_zsl_preview_3264x2448.so
-vendor/lib/libchromatix_s5k2p7sq_3a_zsl_preview_3264x2448_ak7374b0.so
 vendor/lib/libchromatix_s5k2p7sq_3a_zsl_preview_3264x2448_sunny.so
-vendor/lib/libchromatix_s5k2p7sq_3a_zsl_preview_ak7374b0.so
 vendor/lib/libchromatix_s5k2p7sq_3a_zsl_preview_engineer.so
-vendor/lib/libchromatix_s5k2p7sq_3a_zsl_preview_engineer_ak7374b0.so
 vendor/lib/libchromatix_s5k2p7sq_3a_zsl_preview_engineer_sunny.so
 vendor/lib/libchromatix_s5k2p7sq_3a_zsl_preview_full_portrait.so
-vendor/lib/libchromatix_s5k2p7sq_3a_zsl_preview_full_portrait_ak7374b0.so
 vendor/lib/libchromatix_s5k2p7sq_3a_zsl_preview_half_portrait.so
-vendor/lib/libchromatix_s5k2p7sq_3a_zsl_preview_half_portrait_ak7374b0.so
 vendor/lib/libchromatix_s5k2p7sq_3a_zsl_preview_panorama.so
-vendor/lib/libchromatix_s5k2p7sq_3a_zsl_preview_panorama_ak7374b0.so
 vendor/lib/libchromatix_s5k2p7sq_3a_zsl_preview_panorama_sunny.so
 vendor/lib/libchromatix_s5k2p7sq_3a_zsl_preview_professional.so
-vendor/lib/libchromatix_s5k2p7sq_3a_zsl_preview_professional_ak7374b0.so
 vendor/lib/libchromatix_s5k2p7sq_3a_zsl_preview_professional_sunny.so
 vendor/lib/libchromatix_s5k2p7sq_3a_zsl_preview_sunny.so
 vendor/lib/libchromatix_s5k2p7sq_common.so
@@ -1762,27 +1698,16 @@ vendor/lib/libchromatix_s5k2p7sq_zsl_snapshot_professional_cpp_sunny.so
 vendor/lib/libchromatix_s5k2p7sq_zsl_zoom_cpp.so
 vendor/lib/libchromatix_s5k2p7sq_zsl_zoom_cpp_sunny.so
 vendor/lib/libchromatix_s5k2t7sm_3a_zsl_preview_full_portrait.so
-vendor/lib/libchromatix_s5k2t7sm_3a_zsl_preview_full_portrait_ak7374b0.so
 vendor/lib/libchromatix_s5k2t7sm_3a_zsl_preview_half_portrait.so
-vendor/lib/libchromatix_s5k2t7sm_3a_zsl_preview_half_portrait_ak7374b0.so
 vendor/lib/libchromatix_s5k2t7sm_a3_engineermode_binning_preview.so
-vendor/lib/libchromatix_s5k2t7sm_a3_engineermode_binning_preview_ak7374b0.so
 vendor/lib/libchromatix_s5k2t7sm_a3_engineermode_zsl_preview.so
-vendor/lib/libchromatix_s5k2t7sm_a3_engineermode_zsl_preview_ak7374b0.so
 vendor/lib/libchromatix_s5k2t7sm_a3_zsl_preview.so
-vendor/lib/libchromatix_s5k2t7sm_a3_zsl_preview_ak7374b0.so
 vendor/lib/libchromatix_s5k2t7sm_a3_zsl_preview_fb.so
-vendor/lib/libchromatix_s5k2t7sm_a3_zsl_preview_fb_ak7374b0.so
 vendor/lib/libchromatix_s5k2t7sm_a3_zsl_preview_panorama.so
-vendor/lib/libchromatix_s5k2t7sm_a3_zsl_preview_panorama_ak7374b0.so
 vendor/lib/libchromatix_s5k2t7sm_a3_zsl_preview_res0.so
-vendor/lib/libchromatix_s5k2t7sm_a3_zsl_preview_res0_ak7374b0.so
 vendor/lib/libchromatix_s5k2t7sm_a3_zsl_preview_wchat.so
-vendor/lib/libchromatix_s5k2t7sm_a3_zsl_preview_wchat_ak7374b0.so
 vendor/lib/libchromatix_s5k2t7sm_a3_zsl_video.so
-vendor/lib/libchromatix_s5k2t7sm_a3_zsl_video_ak7374b0.so
 vendor/lib/libchromatix_s5k2t7sm_a3_zsl_video_res0.so
-vendor/lib/libchromatix_s5k2t7sm_a3_zsl_video_res0_ak7374b0.so
 vendor/lib/libchromatix_s5k2t7sm_common.so
 vendor/lib/libchromatix_s5k2t7sm_common_engineermode_binning.so
 vendor/lib/libchromatix_s5k2t7sm_common_engineermode_zsl.so
@@ -1830,8 +1755,6 @@ vendor/lib/libchromatix_s5k2t7sp_a3_engineermode_zsl_preview.so
 vendor/lib/libchromatix_s5k2t7sp_a3_engineermode_zsl_preview_qteck.so
 vendor/lib/libchromatix_s5k2t7sp_a3_engineermode_zsl_preview_sunny.so
 vendor/lib/libchromatix_s5k2t7sp_a3_zsl_preview.so
-vendor/lib/libchromatix_s5k2t7sp_a3_zsl_preview_faceunlock.so
-vendor/lib/libchromatix_s5k2t7sp_a3_zsl_preview_faceunlock_qteck.so
 vendor/lib/libchromatix_s5k2t7sp_a3_zsl_preview_faceunlock_sunny.so
 vendor/lib/libchromatix_s5k2t7sp_a3_zsl_preview_fb.so
 vendor/lib/libchromatix_s5k2t7sp_a3_zsl_preview_fb_qteck.so
@@ -1881,7 +1804,6 @@ vendor/lib/libchromatix_s5k2t7sp_cpp_video.so
 vendor/lib/libchromatix_s5k2t7sp_postproc.so
 vendor/lib/libchromatix_s5k2t7sp_preview.so
 vendor/lib/libchromatix_s5k2t7sp_preview_faceunlock.so
-vendor/lib/libchromatix_s5k2t7sp_preview_faceunlock_16051.so
 vendor/lib/libchromatix_s5k2t7sp_snapshot.so
 vendor/lib/libchromatix_s5k2t7sp_snapshot_fb.so
 vendor/lib/libchromatix_s5k2t7sp_snapshot_fb_sunny.so
@@ -2117,6 +2039,7 @@ vendor/etc/camera/imx362_chromatix.xml
 vendor/etc/camera/imx362_chromatix_bear.xml
 vendor/etc/camera/imx362_gt24c64a_chromatix.xml
 vendor/etc/camera/imx371_chromatix.xml
+vendor/etc/camera/imx371_rm_chromatix.xml
 vendor/etc/camera/imx376_chromatix.xml
 vendor/etc/camera/imx376_jdi_chromatix.xml
 vendor/etc/camera/imx376_lens3962_chromatix.xml
@@ -2132,6 +2055,7 @@ vendor/etc/camera/imx398_ofilm_chromatix.xml
 vendor/etc/camera/imx398_qtech_chromatix.xml
 vendor/etc/camera/imx398_semco_chromatix.xml
 vendor/etc/camera/imx398t_ofilm_chromatix.xml
+vendor/etc/camera/imx398t_ofilm_rm_chromatix.xml
 vendor/etc/camera/imx476_chromatix.xml
 vendor/etc/camera/imx519_chromatix.xml
 vendor/etc/camera/imx576_chromatix.xml
@@ -2151,10 +2075,8 @@ vendor/etc/camera/ov8865_chromatix.xml
 vendor/etc/camera/s5k2l7_8953_chromatix.xml
 vendor/etc/camera/s5k2l7_chromatix.xml
 vendor/etc/camera/s5k2l7sx_chromatix.xml
-vendor/etc/camera/s5k2p7sq_ak7374b0_chromatix.xml
 vendor/etc/camera/s5k2p7sq_chromatix.xml
 vendor/etc/camera/s5k2p7sq_sunny_chromatix.xml
-vendor/etc/camera/s5k2t7sm_ak7374b0_chromatix.xml
 vendor/etc/camera/s5k2t7sm_chromatix.xml
 vendor/etc/camera/s5k2t7sp_chromatix.xml
 vendor/etc/camera/s5k2t7sp_qteck_chromatix.xml
@@ -2171,6 +2093,9 @@ vendor/etc/camera/s5k3p3sm_chromatix.xml
 vendor/etc/camera/s5k3p8sp_chromatix.xml
 
 # Camera (mmcamera)
+vendor/lib/libmmcamera2_mct_shimlayer.so
+vendor/lib/libmmcamera2_q3a_core.so
+vendor/lib/libmmcamera2_stats_modules.so
 vendor/lib/libmmcamera_atmel_at24c32e_eeprom.so
 vendor/lib/libmmcamera_csidtg.so
 vendor/lib/libmmcamera_dw9761b_2d_eeprom.so
@@ -2186,7 +2111,6 @@ vendor/lib/libmmcamera_imx258_mono.so
 vendor/lib/libmmcamera_imx258_mono_gt24c32_eeprom.so
 vendor/lib/libmmcamera_imx298.so
 vendor/lib/libmmcamera_imx318.so
-vendor/lib/libmmcamera_imx350.so
 vendor/lib/libmmcamera_imx350_cat24c64_eeprom.so
 vendor/lib/libmmcamera_imx350_gt24c64ass_eeprom.so
 vendor/lib/libmmcamera_imx350_gt24c64s_eeprom.so
@@ -2265,19 +2189,27 @@ vendor/lib/libmmcamera_truly_cma481_eeprom.so
 vendor/lib/libmmcamera_truly_cmb433_eeprom.so
 
 # Display calibration
-vendor/etc/qdcm_calib_data_oppo17011samsung_sofeg01_s_1080p_cmd_mode_dsi_panel.xml
-vendor/etc/qdcm_calib_data_oppo17021samsung_sofeg01_s_1080p_cmd_mode_dsi_panel.xml
+vendor/etc/qdcm_calib_data_oppo18316himax_hx83112a_1080_2340_video_mode_dsi_panel.xml
+vendor/etc/qdcm_calib_data_oppo18321dpt_nt36672a_1080_2340_video_mode_dsi_panel.xml
 
 # Fingerprint
 vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service
-vendor/bin/qfp-daemon
-vendor/etc/permissions/qti_fingerprint_interface.xml
 vendor/lib64/android.frameworks.fingerprintservice@1.0.so
-vendor/lib64/libqfp-service.so
 vendor/lib64/vendor.oppo.hardware.commondcs@1.0.so
-vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
 # Firmware
+vendor/firmware/tp/18321/FW_HX_NF83112A_DSJM.img
+vendor/firmware/tp/18321/FW_HX_NF83112A_DSJM_FAE.img
+vendor/firmware/tp/18321/FW_HX_NF83112A_DSJM_TEST.img
+vendor/firmware/tp/18321/FW_HX_NF83112A_TIANMA.img
+vendor/firmware/tp/18321/FW_NT_NF36672_DEPUTE.bin
+vendor/firmware/tp/18321/FW_NT_NF36672_DEPUTE_FAE.bin
+vendor/firmware/tp/18321/FW_NT_NF36672_DEPUTE_TEST.bin
+vendor/firmware/tp/18321/FW_NT_NF36672_TIANMA.bin
+vendor/firmware/tp/18321/FW_NT_NF36672_TIANMA_FAE.bin
+vendor/firmware/tp/18321/FW_NT_NF36672_TIANMA_TEST.bin
+vendor/firmware/tp/18321/LIMIT_NT_NF36672_DEPUTE.img
+vendor/firmware/tp/18321/LIMIT_NT_NF36672_TIANMA.img
 vendor/firmware/a_fp.b00
 vendor/firmware/a_fp.b01
 vendor/firmware/a_fp.b02
@@ -2287,15 +2219,6 @@ vendor/firmware/a_fp.b05
 vendor/firmware/a_fp.b06
 vendor/firmware/a_fp.b07
 vendor/firmware/a_fp.mdt
-vendor/firmware/a_goodix.b00
-vendor/firmware/a_goodix.b01
-vendor/firmware/a_goodix.b02
-vendor/firmware/a_goodix.b03
-vendor/firmware/a_goodix.b04
-vendor/firmware/a_goodix.b05
-vendor/firmware/a_goodix.b06
-vendor/firmware/a_goodix.b07
-vendor/firmware/a_goodix.mdt
 vendor/firmware/b_fp.b00
 vendor/firmware/b_fp.b01
 vendor/firmware/b_fp.b02
@@ -2305,34 +2228,25 @@ vendor/firmware/b_fp.b05
 vendor/firmware/b_fp.b06
 vendor/firmware/b_fp.b07
 vendor/firmware/b_fp.mdt
-vendor/firmware/b_goodix.b00
-vendor/firmware/b_goodix.b01
-vendor/firmware/b_goodix.b02
-vendor/firmware/b_goodix.b03
-vendor/firmware/b_goodix.b04
-vendor/firmware/b_goodix.b05
-vendor/firmware/b_goodix.b06
-vendor/firmware/b_goodix.b07
-vendor/firmware/b_goodix.mdt
-vendor/firmware/tp/17011/17011_FW_S3508_SYNAPTICS.img
-vendor/firmware/tp/17011/17011_Limit_data.img
-vendor/firmware/tp/17021/17021_FW_S3508_SYNAPTICS.img
-vendor/firmware/tp/17021/17021_Limit_data.img
 
-# Gatekeeper
-vendor/lib/hw/gatekeeper.sdm660.so
-vendor/lib64/hw/gatekeeper.sdm660.so
+# Gatekeeper - from RMX1801-user 9 PKQ1.181121.001 eng.root.20200512.010506 release-keys
+vendor/lib/hw/gatekeeper.sdm660.so|bb56ae8a8fcc13148d1723044b8c617e6cf0b7ae
+vendor/lib64/hw/gatekeeper.sdm660.so|e8f32651e4bfff88fcc02c34eca6cd5f04a444aa
 
-# Graphics firmware - from PAAM00-user 10 QKQ1.191224.003 1608710123 release-keys
-vendor/firmware/a512_zap.b00|85a7fc0008f9a2071d8b3d0cc212b19141633267
-vendor/firmware/a512_zap.b01|c7ad6c12469a312f2639bd2133f87d6d155e0462
-vendor/firmware/a512_zap.b02|33cc074ca840ae59f310a0e217aa7409afb30ac2
-vendor/firmware/a512_zap.elf|cab2d6c9f6b52cfa57ce1a4f559191f5ab1e38c0
-vendor/firmware/a512_zap.mdt|6857352626bb96b117d62fe29bff543034bd4b0d
-vendor/firmware/a530_pfp.fw|d027c70fde64241ec13160d09ee1b6c272974a4b
-vendor/firmware/a530_pm4.fw|b1cf625b5552b99839687f479c124ac5daca2ca2
-vendor/firmware/a540_gpmu.fw2|3530f10b4825a3b08c79e0bcfaf6471ec8422f24
+# Graphics firmware
+vendor/firmware/a512_zap.b00
+vendor/firmware/a512_zap.b01
+vendor/firmware/a512_zap.b02
+vendor/firmware/a512_zap.elf
+vendor/firmware/a512_zap.mdt
+vendor/firmware/a530_pfp.fw
+vendor/firmware/a530_pm4.fw
+vendor/firmware/a540_gpmu.fw2
 
-# Keystore
-vendor/lib/hw/keystore.sdm660.so
-vendor/lib64/hw/keystore.sdm660.so
+# Hypnus
+vendor/lib64/libhypnusclient.so
+vendor/lib64/vendor.oppo.hardware.hypnus@1.0.so
+
+# Keystore - from RMX1801-user 9 PKQ1.181121.001 eng.root.20200512.010506 release-keys
+vendor/lib/hw/keystore.sdm660.so|ad49563962736752cd094b113e46658e1b5e6d39
+vendor/lib64/hw/keystore.sdm660.so|645881b7a2709dfce5d6b9be9df4659ec2ab0eac

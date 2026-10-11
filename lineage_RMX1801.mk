@@ -11,17 +11,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Inherit from R11s device
-$(call inherit-product, device/oppo/R11s/device.mk)
+# Inherit from RMX1801 device
+$(call inherit-product, device/realme/RMX1801/device.mk)
 
-PRODUCT_DEVICE := R11s
-PRODUCT_NAME := lineage_R11s
+PRODUCT_DEVICE := RMX1801
+PRODUCT_NAME := lineage_RMX1801
 PRODUCT_BRAND := OPPO
-PRODUCT_MODEL := OPPO R11s
+PRODUCT_MODEL := Realme 2 Pro
 PRODUCT_MANUFACTURER := OPPO
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="sdm660_64-user 9 PKQ1.190414.001 eng.root.20200522.190302 release-keys" \
-    BuildFingerprint=OPPO/R11s/R11s:9/PKQ1.190414.001/1588166940:user/release-keys
+    BuildDesc="sdm660_64-user 10 QKQ1.191014.001 eng.root.20201016.161857 release-keys" \
+    BuildFingerprint=OPPO/RMX1801/RMX1801:10/QKQ1.191014.001/1602573502:user/release-keys

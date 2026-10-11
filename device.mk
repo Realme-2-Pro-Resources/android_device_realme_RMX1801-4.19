@@ -8,11 +8,11 @@
 $(call inherit-product, device/oppo/sdm660-common/common.mk)
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/oppo/R11s/R11s-vendor.mk)
+$(call inherit-product, vendor/realme/RMX1801/RMX1801-vendor.mk)
 
 # Overlays
 PRODUCT_PACKAGES += \
-    FrameworkResOverlayR11s
+    FrameworkResOverlayRMX1801
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

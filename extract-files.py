@@ -19,7 +19,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/oppo/R11s',
+    'device/realme/RMX1801',
     'device/oppo/sdm660-common',
     'hardware/qcom-caf/sdm660',
     'vendor/oppo/sdm660-common'
@@ -40,13 +40,13 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'R11s',
-    'oppo',
+    'RMX1801',
+    'realme',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
     namespace_imports=namespace_imports,
 )
 
 if __name__ == '__main__':
-    utils = ExtractUtils.device_with_common(module, 'sdm660-common', module.vendor)
+    utils = ExtractUtils.device_with_common(module, 'sdm660-common', 'oppo')
     utils.run()
