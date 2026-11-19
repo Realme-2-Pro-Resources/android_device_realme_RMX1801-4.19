@@ -25,8 +25,8 @@ odm                                                     /odm                    
 # Need to have this entry in here even though the mount point itself is no longer needed.
 # The update_engine code looks for this entry in order to determine the boot device address
 # and fails if it does not find it.
-/devices/soc/c084000.sdhci/mmc_host*                         /storage/sdcard1    vfat    nosuid,nodev    wait,voldmanaged=sdcard1:auto
-/devices/soc/a800000.ssusb/a800000.dwc3/xhci-hcd.*.auto*     /storage/usbotg     vfat    nosuid,nodev    wait,voldmanaged=usbotg:auto
+/devices/platform/soc/c084000.sdhci/mmc_host*                /storage/sdcard1    vfat    nosuid,nodev    wait,voldmanaged=sdcard1:auto
+/devices/platform/soc/a800000.ssusb/a800000.dwc3/xhci-hcd.*.auto* /storage/usbotg     vfat    nosuid,nodev    wait,voldmanaged=usbotg:auto
 
 # ZRAM
 /dev/block/zram0                                        none                     swap    defaults        zramsize=50%,max_comp_streams=8

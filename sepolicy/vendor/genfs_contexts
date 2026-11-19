@@ -1,0 +1,2 @@
+# msm-4.19 places SoC devices under /sys/devices/platform/soc
+genfscon sysfs /devices/platform/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d000/leds/white    u:object_r:sysfs_graphics:s0
