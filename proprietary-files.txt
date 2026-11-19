@@ -107,7 +107,6 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|23706dcfa35cc6f7dee934e138
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|ece3dafc4447e8302109851c3a6b0d3978b3506d
 
 # Camera
-vendor/lib/hw/camera.sdm660.so
 vendor/lib/libDxHdcp.so
 vendor/lib/libSTDualCamCaptureBokeh.so;DISABLE_CHECKELF
 vendor/lib/libSTDualCamPreviewBokeh.so
@@ -134,12 +133,9 @@ vendor/lib/libjpegehw.so
 vendor/lib/libmm-qcamera.so
 vendor/lib/libmmcamera_sonyimx135_eeprom.so
 vendor/lib/libmmjpeg.so
-vendor/lib/libmmjpeg_interface.so
-vendor/lib/libmmlib2d_interface.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
 vendor/lib/libmpbase.so
-vendor/lib/libqomx_core.so
 vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
@@ -207,8 +203,6 @@ vendor/lib/libarcsoft_picbest.so
 vendor/lib/libarcsoft_relighting_pro_image.so
 vendor/lib/libarcsoft_smart_denoise.so
 vendor/lib/libarcsoft_videostabilizer.so
-vendor/lib/libarcvs.dep.so
-vendor/lib/libarcvs.so
 
 # Camera calibration files
 system/etc/camera/cp/CPCalibrationData.bin:vendor/etc/camera/cp/CPCalibrationData.bin
@@ -2358,7 +2352,6 @@ vendor/lib/libmmcamera_imx476.so
 vendor/lib/libmmcamera_imx519.so
 vendor/lib/libmmcamera_imx576.so
 vendor/lib/libmmcamera_imx576_m24c64s_eeprom.so
-vendor/lib/libmmcamera_interface.so
 vendor/lib/libmmcamera_isp_abf48.so
 vendor/lib/libmmcamera_isp_aec_bg_stats47.so
 vendor/lib/libmmcamera_isp_bf_stats47.so
@@ -2497,7 +2490,6 @@ vendor/lib/libPerfectlyClearCrux.so
 vendor/lib/libPolarrRender.so
 vendor/lib/libSCES.so
 vendor/lib/libblur_channel.so
-vendor/lib/libcamhidlsensor.so
 vendor/lib/libcpp_offline_pproc.so
 vendor/lib/libnnp.so
 vendor/lib/libocam_common.so
