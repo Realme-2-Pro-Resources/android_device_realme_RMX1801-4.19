@@ -24,10 +24,12 @@ from extract_utils.main import (
 
 namespace_imports = [
     'device/realme/RMX1801',
-    'hardware/qcom-caf/msm8998',
+    'hardware/qcom-caf/sdm660',
     'hardware/qcom-caf/wlan',
     'hardware/oppo',
+    'vendor/qcom/opensource/commonsys/display',
     'vendor/qcom/opensource/dataservices',
+    'vendor/qcom/opensource/display',
 ]
 
 def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
