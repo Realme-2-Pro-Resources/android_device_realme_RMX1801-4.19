@@ -2662,15 +2662,15 @@ vendor/etc/qdcm_calib_data_oppo18321dpt_nt36672a_1080_2340_video_mode_dsi_panel.
 # Display config
 vendor/etc/OPPO_OLED_AD_calib.cfg
 
-# Display postprocessing - from m690-user 11 RKQ1.210607.001 00WW_3_710_SP05 release-keys
-vendor/bin/hw/vendor.display.color@1.0-service|815cc36f3722fbfb5fdd52f6678309d207888038
-vendor/bin/mm-pp-dpps|0aa22b96ee8de5f17386f992ba9f20bc5051261f
+# Display postprocessing - from helios-user 14 14-35-10.00-UG-U04-STD-HEL-04 44 release-keys
+vendor/bin/hw/vendor.display.color@1.0-service|fdccaf00679a2cc64e6bf66d323a01ff083ce79e
+vendor/bin/mm-pp-dpps|bf0892746c71592731e0b9ca72cdfe5316f4b13b
 vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
-vendor/lib64/libdisp-aba.so|4aed9d5d297c812bf5dd1aedede4f1c7dec22cf9
-vendor/lib64/vendor.display.color@1.0.so|09cb45881528c6d4675754c88c108f30dd1da12a
-vendor/lib64/vendor.display.color@1.1.so|3cf0d256372bd418462326e6067b4e1213226194
-vendor/lib64/vendor.display.color@1.2.so|8184e5d3e404864b1a1518b4d4e2012a5839660b
-vendor/lib64/vendor.display.postproc@1.0.so|86ef4e868f7abb95d555a4d086a8c4193920803f
+vendor/lib64/libdisp-aba.so|e1dc89192ef58160a4b30210345fb8e09e22898e
+vendor/lib64/vendor.display.color@1.0.so|d4bef738354e70dd93196e1c6bc2e523d7b723f2
+vendor/lib64/vendor.display.color@1.1.so|027ec899c7e85b18cdc809d2e71a01fe088429fc
+vendor/lib64/vendor.display.color@1.2.so|f4279bde2b96ed2f3f77af45eb54bc1e8db6be30
+vendor/lib64/vendor.display.postproc@1.0.so|3f2dcc8a1169dd0f1981d2e5d33e3fe26719b7e8
 
 # DSP - from m690-user 11 RKQ1.210607.001 00WW_3_710_SP05 release-keys
 vendor/bin/dspservice|d4e262b312a40ca275a6e6c9eefdab2d81da2f21
@@ -2837,17 +2837,17 @@ vendor/lib64/librs_adreno_sha1.so
 vendor/lib/libhdr_tm.so
 vendor/lib64/libhdr_tm.so
 
-# Graphics (SDM)
-vendor/lib/libqseed3.so
-vendor/lib/libsdm-color.so
-vendor/lib/libsdm-disp-vndapis.so
-vendor/lib/libtinyxml2_1.so
-vendor/lib64/libqseed3.so
-vendor/lib64/libsdm-color.so
-vendor/lib64/libsdm-diag.so
-vendor/lib64/libsdm-disp-vndapis.so
-vendor/lib64/libsdmextension.so
-vendor/lib64/libtinyxml2_1.so
+# Graphics (SDM) - from helios-user 14 14-35-10.00-UG-U04-STD-HEL-04 44 release-keys
+vendor/lib/libqseed3.so|87b37fefb7609474f9d1730c6c6a23c681046fe3
+vendor/lib/libsdm-color.so|408b3a458834a30ed316f50d8bb662b29f16f73e
+vendor/lib/libsdm-disp-vndapis.so|16ea053728a1bf0fc6c285c8cf193dcaa9cc6ffc
+vendor/lib/libtinyxml2_1.so|dfe3efe3a6e5ad5beb6e4e9adb02eef475b421a7
+vendor/lib64/libqseed3.so|0a81db5fc5b762a8fd246dfccd69014662fe35eb
+vendor/lib64/libsdm-color.so|8c997688894a6373787e1eabbb62f719bbb632b4
+vendor/lib64/libsdm-diag.so|1b27bcbdba062afc1d414b30c1efcd08ac4140cf
+vendor/lib64/libsdm-disp-vndapis.so|c8408b9e8d9ee4cf82eb0c0000fb348848ff3c55
+vendor/lib64/libsdmextension.so|9a4342e9417fd7cee2eb4d34c55762c4de6811ae
+vendor/lib64/libtinyxml2_1.so|5bdb5c7785f90ad4ebaa7085a4f83d86567331f9
 
 # Graphics Firmware
 vendor/firmware/a512_zap.b00
@@ -2910,7 +2910,6 @@ vendor/lib64/libgcs.so|7cf96f4e509fe7f88cc73a124ad9a74017438b08
 # Media
 vendor/lib/libI420colorconvert.so
 vendor/lib/libOmxVideoDSMode.so
-vendor/lib/libOmxVpp.so
 vendor/lib/libavcodec.so
 vendor/lib/libavformat.so
 vendor/lib/libavutil.so
@@ -2924,14 +2923,10 @@ vendor/lib/libmmsw_platform.so
 vendor/lib/libmulawdec.so
 vendor/lib/libstagefright_soft_qtiflacdec.so
 vendor/lib/libswresample.so
-vendor/lib/libvpphvx.so
-vendor/lib/libvpplibrary.so
 vendor/lib/libvqzip.so
 vendor/lib/libwfdcommonutils_proprietary.so
 vendor/lib/libwfdmmservice.so
-vendor/lib/vendor.qti.hardware.vpp@1.1.so
 vendor/lib64/libI420colorconvert.so
-vendor/lib64/libOmxVpp.so
 vendor/lib64/libavcodec.so
 vendor/lib64/libavformat.so
 vendor/lib64/libavutil.so
@@ -2945,9 +2940,6 @@ vendor/lib64/libmmsw_platform.so
 vendor/lib64/libmulawdec.so
 vendor/lib64/libstagefright_soft_qtiflacdec.so
 vendor/lib64/libswresample.so
-vendor/lib64/libvpphvx.so
-vendor/lib64/libvpplibrary.so
-vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 
 # Perf
 vendor/bin/hw/vendor.qti.hardware.perf@2.0-service
@@ -3286,6 +3278,16 @@ vendor/lib64/libtime_genoff.so|8bb116ad297a5e4a94da2f10509509cb6e863a5f
 # UBWC - from m690-user 11 RKQ1.210607.001 00WW_3_710_SP05 release-keys
 vendor/lib64/libUBWC.so|2d716d9bb1c2d4ba42d3a850085c0d7d3a3b37f4
 vendor/lib64/libstreamparser.so|aa8ec0d2b9fd4a9c8da62905690383feacc1acf7
+
+# VPP - from helios-user 14 14-35-10.00-UG-U04-STD-HEL-04 44 release-keys
+vendor/lib/libOmxVpp.so|84c04bada14944b2f383cffee2d8a36876c64c1c
+vendor/lib/libvpphvx.so|ec3f9dce7cdaeff4670fde9a2ba6e345b46c99ea
+vendor/lib/libvpplibrary.so|2a9a178a5e74125c0e42336d4d4f5eb7d2a52dc0
+vendor/lib/vendor.qti.hardware.vpp@1.1.so|2bf8de06341b625390e6fa0c5d83cee94ac1692d
+vendor/lib64/libOmxVpp.so|ac90508f3a997b428c6cd0977af23b9a780b7c23
+vendor/lib64/libvpphvx.so|3efa33223b369fb08addfaa1059223a2b11061b0
+vendor/lib64/libvpplibrary.so|aa2b4e0fa11fe279728135f7854d11427ebe89a1
+vendor/lib64/vendor.qti.hardware.vpp@1.1.so|e555e7ccd61ca8456121775d66324ce71666c8be
 
 # WiFi
 vendor/bin/cnss-daemon
