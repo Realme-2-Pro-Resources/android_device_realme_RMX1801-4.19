@@ -24,10 +24,12 @@ from extract_utils.main import (
 
 namespace_imports = [
     'device/realme/RMX1801',
-    'hardware/qcom-caf/msm8998',
+    'hardware/qcom-caf/sdm660',
     'hardware/qcom-caf/wlan',
     'hardware/oppo',
+    'vendor/qcom/opensource/commonsys/display',
     'vendor/qcom/opensource/dataservices',
+    'vendor/qcom/opensource/display',
 ]
 
 def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
@@ -42,8 +44,6 @@ lib_fixups: lib_fixups_user_type = {
         'com.qualcomm.qti.uceservice@2.2',
         'com.qualcomm.qti.uceservice@2.3',
         'vendor.qti.hardware.fm@1.0',
-        'vendor.qti.hardware.qccsyshal@1.0',
-        'vendor.qti.hardware.qccvndhal@1.0',
         'vendor.qti.imsrtpservice@3.0',
     ): lib_fixup_vendor_suffix,
     (
@@ -51,6 +51,8 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc': blob_fixup()
+        .regex_replace('    disabled', '    #disabled'),
     'vendor/lib/libdepthmap.so': blob_fixup()
         .clear_symbol_version('remote_handle_close')
         .clear_symbol_version('remote_handle_invoke')
@@ -79,8 +81,6 @@ blob_fixups: blob_fixups_user_type = {
                               b'android.hardware.radio.c_shim@1.1.so')
         .binary_regex_replace(b'android\\.hardware\\.radio\\.config@1\\.2\\.so',
                               b'android.hardware.radio.c_shim@1.2.so'),
-    'vendor/lib64/libwvhidl.so': blob_fixup()
-        .add_needed('libcrypto_shim.so'),
     'vendor/lib64/sensors.ssc.so': blob_fixup()
         .sig_replace('39 28 00 40 f9 09 05 80 52', '39 28 00 40 f9 09 1e 80 52')
         .sig_replace('1f b9 01 71 a1', '1f c1 03 71 a1' )

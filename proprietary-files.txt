@@ -1,7 +1,6 @@
 ## RMX1801 package version: RMX1801EX_11.F.12, unless stated otherwise
 
 # Current libraries with ELF checks disabled:
-# libGLESv1_CM_adreno, libq3dtools_adreno, libq3dtools_esx, libCB, libgsl, librs_adreno depends on intrinsic symbols which are difficult to shim (__aeabi_uldivmod)
 # libSTDualCamCaptureBokeh depends on unresolved symbols __exidx_end, __exidx_start
 
 # ADSP
@@ -40,8 +39,8 @@ vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
 vendor/lib/rfsa/adsp/libthread_blur_skel.so
 vendor/lib/rfsa/adsp/libvpp_svc_skel.so
 
-# ANT+ - from m690-user 11 RKQ1.210607.001 00WW_3_710_SP05 release-keys
-vendor/lib64/hw/com.dsi.ant@1.0-impl.so|87dc1a131534659173e71e108e7a3ffe6325845f
+# ANT+ - from helios-user 14 14-35-10.00-UG-U04-STD-HEL-04 44 release-keys
+vendor/lib64/hw/com.dsi.ant@1.0-impl.so|d81c62439958c309c34bc96bf63232fa3a6481b5
 
 # Audio
 system/etc/permissions/audiosphere.xml
@@ -94,17 +93,18 @@ vendor/lib64/libaudio_log_utils.so
 # Audio Power Amplifier
 vendor/firmware/tfa98xx.cnt
 
-# Bluetooth - from m690-user 11 RKQ1.210607.001 00WW_3_710_SP05 release-keys
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|07d96d0d3c4a500b14ea3c97e02b9eb5ee2bbc4d
+# Bluetooth - from helios-user 14 14-35-10.00-UG-U04-STD-HEL-04 44 release-keys
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|5fb0c2184b062039281282baf6543f6bea56a9a8
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b08647447869ade86ec63f7340accc
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|14d44c77a6f0b305ec7e03e679d7692884a3985d
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|156ec51ccb53f667605cf99422abf9357888b4b6
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|a9685a3bc4d4c5a0afbd915ec7babd2ba3e929ff
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|3e1a8c52d73ef5e67bea68610906627226aabe21
-vendor/lib64/libbt-hidlclient.so|ff301380cf3c0ff68d2b7fcda3ba428ebf0a859e
-vendor/lib64/libbtnv.so|0c74a43550b939b9496b03b3285fa950cf560c48
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|23706dcfa35cc6f7dee934e13886c19a56a9aa12
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|ece3dafc4447e8302109851c3a6b0d3978b3506d
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|b179e3b745a2666eeac3e37661963e0578adb7d8
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|a24970b670e52e3df882a36b957caa81a17f1e90
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|6d0a838e5aa52773b068f2800b01943a6ae5b209
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|b25aaa4a7ce7cf72e67de3725d3c8b09aaa5e09e
+vendor/lib64/libbt-hidlclient.so|4f238bb08d5dbab9c018d03e47d4f2d43e667532
+vendor/lib64/libbtnv.so|d412e0511c79599cdb010a18f97111e0283759e8
+vendor/lib64/libsoc_helper.so|4f00ed77a590817651ea3eb9c93d987ef15bf9e7
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|475311f05f103b23654253e1dc86bdc5fcc8809a
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|f191bd8bb067e57a06af89ce2f9a9ea703bb2516
 
 # Camera
 vendor/lib/hw/camera.sdm660.so
@@ -2520,8 +2520,8 @@ vendor/lib64/libcdsp_default_listener.so|81e5f4737bfb7e2f0a906183b2a8357a5053ee5
 vendor/lib64/libcdsprpc.so|972c2393a698c5115bbd2c656b6868a3bbd2f158
 vendor/lib64/libsysmon_cdsp_skel.so|8a951e039071107317e0e7541ff4df7ad35d87ad
 
-# Charger - from m690-user 11 RKQ1.210607.001 00WW_3_710_SP05 release-keys
-vendor/bin/hvdcp_opti|cfee9d4b5c2a842173aefe573344b2d3366f7d17
+# Charger - from helios-user 14 14-35-10.00-UG-U04-STD-HEL-04 44 release-keys
+vendor/bin/hvdcp_opti|7b5ef847d9ad1941383db8d51dd857f52969c4ad
 
 # CNE - from m690-user 11 RKQ1.210607.001 00WW_3_710_SP05 release-keys
 vendor/app/CneApp/CneApp.apk|39144b727c1897cb52edf6c725c2eed6ca83eb4f
@@ -2579,6 +2579,13 @@ vendor/lib64/vendor.qti.hardware.data.lce@1.0.so|80d8502e6458ecf0883a029c2777c24
 vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so|851db5940d5e9e4330e16221be114aef14f52325
 vendor/lib64/vendor.qti.hardware.mwqemadapter@1.0.so|c041dbfc99643e791e52c4e7f3a87050a8cd6c93
 
+# Display calibration
+vendor/etc/qdcm_calib_data_oppo18316himax_hx83112a_1080_2340_video_mode_dsi_panel.xml
+vendor/etc/qdcm_calib_data_oppo18321dpt_nt36672a_1080_2340_video_mode_dsi_panel.xml
+
+# Display config
+vendor/etc/OPPO_OLED_AD_calib.cfg
+
 # DPM - from m690-user 11 RKQ1.210607.001 00WW_3_710_SP05 release-keys
 system/framework/tcmclient.jar|cdd1ea7143a5a7acc3909b5cfa706650179647c7
 system_ext/bin/dpmd|4662a11c5331919cc08d541a298444ffce18cc1b
@@ -2600,77 +2607,28 @@ vendor/etc/init/dpmQmiMgr.rc|1538743661a5c48c15cd105beaad20f72953885a
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so;MODULE_SUFFIX=_vendor|d9f1aa7f93b928f42499d613d20ccbc60f279097
 vendor/lib64/libdpmqmihal.so|41eb89e66ba065c43a5eb79cd3c72cef0ee167aa
 
-# DRM - from m690-user 11 RKQ1.210607.001 00WW_3_710_SP05 release-keys
-vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service|d3d6ed383483747f8bec574adcac1c24ef1ac3a4
-vendor/bin/qseecomd|1aa84570b97468e3e6d0a1266396db7d087d8f87
-vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc|0f43244d70d5efc1e4f089b926a9dc4f59e53db1
-vendor/etc/gpfspath_oem_config.xml|7aeade35b0bbe27530f6aca8c1ed5192a7acf59d
-vendor/lib/libQSEEComAPI.so|b88a74220b7082c4e066ab98664e653b9f0e76ea
-vendor/lib/libqcbor.so|3371e2fb2be1d7ff569f35841c88d2f8fe9199a5
-vendor/lib/libsdedrm.so|9bfbcb30a2d91a18c54111b403df91dee07c82ab
-vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so|1662ff9ec4e65d9b42f41ab2536378904a183627
-vendor/lib64/libGPQTEEC_vendor.so|bc884615f468508bd7f7fec793414d9fde58f0d0
-vendor/lib64/libGPTEE_vendor.so|527c8393ef416a9ddca4337fb4b5a1618551de44
-vendor/lib64/libGPreqcancel.so|b9efbc8623981e1249ad0a0f8964b2b655d2b334
-vendor/lib64/libGPreqcancel_svc.so|088a77c5369aeb03062199731ec883c1ad048f8e
-vendor/lib64/libQSEEComAPI.so|56ddcf0b5d7396377828db98d8705b89e48a930f
-vendor/lib64/libSecureUILib.so|06c34dde058a9d83b78167ecd6bf2f2565dd406b
-vendor/lib64/libStDrvInt.so|6091f1f496b87730f9a77e9ede504c4fa99c608a
-vendor/lib64/libcpion.so|b412ee0d83184dd35d3e8044c37be90543e4a5f4
-vendor/lib64/libdisplayconfig.qti.so|0739fba3fafccc55f3741e627bdd92250cb4e762
-vendor/lib64/libdrmfs.so|11a6e61c2d1e66d0ed89848bb56d4c9852379a12
-vendor/lib64/libdrmtime.so|d1e84e6bc6545ecc8dea1c648de0b691c2de7e6c
-vendor/lib64/libqcbor.so|7da5294a577f5a71ede5b3804a026bf69bd025ee
-vendor/lib64/libqisl.so|c79719eebc094c2af9561e8df2c158638b111b70
-vendor/lib64/librmp.so|6392e70196f5a6da2d49a1aaec60f06ca378f1c4
-vendor/lib64/librpmb.so|085a3a79b627d1210654ad50902b36a0ba3ee99c
-vendor/lib64/libsdedrm.so|a6af861a2db5721e0ef1d9606713e967c3d39b1c
-vendor/lib64/libsecureui.so|6cd84092ab2d70bf17fff025376d50294c935439
-vendor/lib64/libsecureui_svcsock.so|6af612f057f4f28720d6db9b300b58c883da6539
-vendor/lib64/libsi.so|8b68569bd78775ddf4455064adeb9b878a919ca5
-vendor/lib64/libssd.so|08566fd544144a9fef6d53eb297df091f1f611af
-vendor/lib64/libtrustedapploader.so|e9ebd0130381cf60219d4c511a8e6908684cb7ab
-vendor/lib64/libtzdrmgenprov.so|8cdbc623f9cbafeab8f89cd24f6875c36fd9121e
-vendor/lib64/vendor.qti.hardware.qseecom@1.0.so|1b4c92c07ed5ba3f053e10a11f2bc1232ad45375
+# DRM - from helios-user 14 14-35-10.00-UG-U04-STD-HEL-04 44 release-keys
+vendor/lib64/libGPQTEEC_vendor.so|9d6d1b2094589d3fda1e2b684bef79f91fe58fa5
+vendor/lib64/libGPTEE_vendor.so|ac26e034961caec87f897105f908f5038870dc45
+vendor/lib64/libcpion.so|b003637dbf1a6f3d1a4271dfdc5c7dc10e094960
+vendor/lib64/libqisl.so|0c9649ba7a6c34ca8b6ce25bca22947736451fd1
+vendor/lib64/librmp.so|a5920751a577bac2cb4388af3d024c875dfcf19f
+vendor/lib64/libtzdrmgenprov.so|9c27620c1bef4bf94ba615d4a6d4ac3fe354bb2b
 
-# DRM-HDCP - from m690-user 11 RKQ1.210607.001 00WW_3_710_SP05 release-keys
-vendor/bin/hdcp1prov|d7e7d56866a657ee6a90ebea0529bd54d13df4f7
-vendor/bin/hdcp2p2prov|f02c04b8b90ed70f9de927465ebe7f2db9bf1b4f
-vendor/lib64/libhdcp1prov.so|349ce16433e7f9c1b1c385818181066f3fdba4cd
-vendor/lib64/libhdcp2p2prov.so|4dfba0a0245784f302313c206efc156f80cc2de7
-vendor/lib64/libhdcpsrm.so|1cb91cbaad3c0a44df4f244f8fb462a9f0ebb0b2
-vendor/lib64/libmm-hdcpmgr.so|b4fa602dfd356ccc3752660dd1690aca568f765f
+# DRM (HDCP) - from helios-user 14 14-35-10.00-UG-U04-STD-HEL-04 44 release-keys
+vendor/bin/hdcp1prov|56129e60e690c9a04ed30155fd2a460b344e5cc6
+vendor/bin/hdcp2p2prov|1c1bfd10429a77ee4a8bc67cee4b6690517dca9d
+vendor/lib64/libhdcp1prov.so|9a6f9b8490d6f39dfeb96b8c8ce18c8e8355c71a
+vendor/lib64/libhdcp2p2prov.so|36f15eb9b223353dc81414023c995e031e19177e
+vendor/lib64/libhdcpsrm.so|0724f807d63b6f21fffb01bb65ca1433dfc1405b
+vendor/lib64/libmm-hdcpmgr.so|d0df5f58368b8bdcd76f3f12109a4e522ba772f2
 
-# DRM-Qteeconnector - from m690-user 11 RKQ1.210607.001 00WW_3_710_SP05 release-keys
-vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|a12cd8a3d326609ee0f0a0cdb5cfc69bd2085f1e
+# DRM (Qteeconnector) - from helios-user 14 14-35-10.00-UG-U04-STD-HEL-04 44 release-keys
+vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|8c42eb00b132a52999b96df36f2354c308e5f58f
 vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc|c966350ee67d3a7c73ca7184e3725264025d16f5
-vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|507fd5e46600374369fe822e339859f1d86716ee
-vendor/lib64/libQTEEConnector_vendor.so|22c4dfe5813f6f923a30ad9470227a65a217ab4a
-vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|4e08dcd830d319c1a56d108c037b1f76eb5060d4
-
-# DRM-Widevine - from m690-user 11 RKQ1.210607.001 00WW_3_710_SP05 release-keys
-vendor/bin/hw/android.hardware.drm@1.3-service.widevine|2158f47423c723a9da29bb81bb16987a1e715c21
-vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|c35e1a6f9a6faff19064a81e07c4be82ceaf4bb5
-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
-vendor/lib64/liboemcrypto.so|d8581db5b66835a89489c394f334cfb9d01b7d7f
-vendor/lib64/libwvhidl.so|acf4870a0b10af74a40a4c6180f2c10a1706ddbd|8c2b366bdae1c114544ad4203f572494870b75e3
-
-# Display-calibration
-vendor/etc/qdcm_calib_data_oppo18316himax_hx83112a_1080_2340_video_mode_dsi_panel.xml
-vendor/etc/qdcm_calib_data_oppo18321dpt_nt36672a_1080_2340_video_mode_dsi_panel.xml
-
-# Display config
-vendor/etc/OPPO_OLED_AD_calib.cfg
-
-# Display postprocessing - from m690-user 11 RKQ1.210607.001 00WW_3_710_SP05 release-keys
-vendor/bin/hw/vendor.display.color@1.0-service|815cc36f3722fbfb5fdd52f6678309d207888038
-vendor/bin/mm-pp-dpps|0aa22b96ee8de5f17386f992ba9f20bc5051261f
-vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
-vendor/lib64/libdisp-aba.so|4aed9d5d297c812bf5dd1aedede4f1c7dec22cf9
-vendor/lib64/vendor.display.color@1.0.so|09cb45881528c6d4675754c88c108f30dd1da12a
-vendor/lib64/vendor.display.color@1.1.so|3cf0d256372bd418462326e6067b4e1213226194
-vendor/lib64/vendor.display.color@1.2.so|8184e5d3e404864b1a1518b4d4e2012a5839660b
-vendor/lib64/vendor.display.postproc@1.0.so|86ef4e868f7abb95d555a4d086a8c4193920803f
+vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|56c3fb6402f1444103d17b178dc86641f1b0952a
+vendor/lib64/libQTEEConnector_vendor.so|3e31b2da1394f839c9220ff361a7867c7f5326ec
+vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|ba4ca20e2a7350ecec0854c13b8b173b67cc3334
 
 # DSP - from m690-user 11 RKQ1.210607.001 00WW_3_710_SP05 release-keys
 vendor/bin/dspservice|d4e262b312a40ca275a6e6c9eefdab2d81da2f21
@@ -2710,137 +2668,116 @@ vendor/firmware/b_fp.b06
 vendor/firmware/b_fp.b07
 vendor/firmware/b_fp.mdt
 
-# FM - from m690-user 11 RKQ1.210607.001 00WW_3_710_SP05 release-keys
-system_ext/lib64/fm_helium.so|b2440e4feaae8a7f5e2269525520f9774b6962fc
-system_ext/lib64/libfm-hci.so|758c6e7cfafc964b5cd9d71806ec5455e0d78716
-system_ext/lib64/vendor.qti.hardware.fm@1.0.so|5eaf6d5d67361ff6236c1ec4f5225c6185a904a6
-vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|c828f2be5415f779bbd9113ed944f981a5fa1f2c
-vendor/lib64/vendor.qti.hardware.fm@1.0.so;MODULE_SUFFIX=_vendor|f6e23f902b7e15232b20af55161a24da93ffe25f
+# FM - from helios-user 14 14-35-10.00-UG-U04-STD-HEL-04 44 release-keys
+system_ext/lib64/fm_helium.so|d64573b7a5b567bd9ee605d67b40357d55daf747
+system_ext/lib64/libfm-hci.so|13752c0da7302c0cc4ae4a3006a991f47e3bc509
+system_ext/lib64/vendor.qti.hardware.fm@1.0.so|86c85a52c3a0025c258f5377f15f66788b54a843
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|d4025a178a559d3a72f29d57d2404561cdccf48a
+vendor/lib64/vendor.qti.hardware.fm@1.0.so;MODULE_SUFFIX=_vendor|12c1ca37da7c6628f7b09cb3865818f72b8fef68
 
-# Gatekeeper
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
-vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
+# Gatekeeper - from helios-user 14 14-35-10.00-UG-U04-STD-HEL-04 44 release-keys
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|c16e642ab6018cfc5d9ed49e33e0781c0b59b693
+vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|1b8d5f58fe0a57906acf72b862c16a2521daa97b
+vendor/lib64/hw/gatekeeper-impl-qti.so:vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|e715c9a8b280d2dcb56f54203586bf0f5e99f8a2
 
-# GNSS - from m690-user 11 RKQ1.210607.001 00WW_3_710_SP05 release-keys
-vendor/app/CACertService/CACertService.apk|7ddf2272f88e068d7f717b252e7b4990eaf3e240
-vendor/bin/hw/android.hardware.gnss@2.1-service-qti|ec8dd6ddeecb9539899ec89a5950d422b6ece916
-vendor/bin/loc_launcher|f170dc02d9046fcde1fc58656b0387773a85e78d
-vendor/bin/lowi-server|6c66e4c543d67af692ff7c78f12fc90cc4bd0bcd
-vendor/bin/mlid|a36c293c13e1929f8943ac8518e27065c0f51ae3
-vendor/bin/xtra-daemon|cd0305e252493d65780b5ff188f937f84c64675a
-vendor/bin/xtwifi-client|6a2811ee6ed2c3aca2541af085fdfba6d24f9a79
-vendor/bin/xtwifi-inet-agent|73eb9393ba634d805055eea3fbea64785063be4b
-vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc|d3844699c845ce5de4c8b50548a2095f92dd0235
-vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml|1c344aacaa6d17a1585ba58b2e6d438dcfe31fad
-vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml|6514b13f55abc0acc28e004c35ff93fb972d61a9
-vendor/etc/cacert_location.pem|0789bf799c7e45d352a83e2f79ddb0cea86db85b
-vendor/etc/xtra_root_cert.pem|f55a31ec4d9cf8ce2724acadecf00c779f8767db
-vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so|b72b210df26f8022c19feea1e30a4c3d1371e62c
-vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so|244050e4081a6bec273d5481916754b77a52890d
-vendor/lib64/libaoa.so|e1811bbe6b98e90196e43bbc2f7c45946ecf89d2
-vendor/lib64/libasn1cper.so|4570be025ca1438da074db7a33e2f690a341a590
-vendor/lib64/libasn1crt.so|f1ab203f5c58750433f07362128c5a835fe8a557
-vendor/lib64/libasn1crtx.so|9ec8d2eedff3a5a333be714ccd76b8c3cf593cf0
-vendor/lib64/libbatching.so|d3d4cb5aefb1ec0618ca2a355b17101dae710914
-vendor/lib64/libdataitems.so|90379d3b3d036ed26bdad94a52a1cdf406f6b562
-vendor/lib64/libgdtap.so|b46b7f6caaf2c2d4f43ed263bcdff3edfdc9f0f1
-vendor/lib64/libgeofencing.so|dbd722a519ea0a2fa2d797f4b0ac14a83525afbf
-vendor/lib64/libgnss.so|c859e76973c9c85beaf649d67f488b381a1bc52e
-vendor/lib64/libgnsspps.so|574d50f263c1156aa162baf54773c9a6a3fbcf4d
-vendor/lib64/libgps.utils.so|da016e53961afcd0eff9102ee88c0e76a4623b03
-vendor/lib64/libizat_client_api.so|810bc49f9b8d2f798552b2ccb10f413757412264
-vendor/lib64/libizat_core.so|d45b75be3e4e6bcd26793cb4325b696165b68c2a
-vendor/lib64/liblbs_core.so|c4715331c44968ebe1195c1128a60260db045b94
-vendor/lib64/libloc_api_v02.so|2b2e8cda6bdf0344a625af3e8a33ef0a60b1801e
-vendor/lib64/libloc_core.so|81b7790888b133ec7aeae7169c1eefae7096ef16
-vendor/lib64/libloc_socket.so|ac64caebca6b881447dbde00f5b539b05069f602
-vendor/lib64/liblocation_api.so|7ac4981f1b0c5921c57e592c262c5f9fd061deac
-vendor/lib64/liblocationservice.so|138238cf930ce8843d81df7b554364c3aa6f7412
-vendor/lib64/liblocationservice_glue.so|95f05d44ea815d85e8f0e024dd8e7b045813d488
-vendor/lib64/liblowi_client.so|5eac232760999dd3338969f4c4255dd4d06ba440
-vendor/lib64/liblowi_wifihal.so|896c6e1cd25ddecb3f1f23391067badab1ddfe75
-vendor/lib64/libmmosal.so|5d560958cce1a6fde1cb66951332b447ac4ad9bd
-vendor/lib64/libqcc_file_agent.so|3707206276c3f8a37d0ab6ee7b2360b5bffe2b3e
-vendor/lib64/libslimclient.so|c6574b79e6b5255936e524b5c733cd44550a0aec
-vendor/lib64/libxtadapter.so|495af82c252ccca8257c5281ba699da214fd1539
-vendor/lib64/libxtwifi_server_protocol.so|a012019f73678b0b3645530714ba0ad534f19179
-vendor/lib64/libxtwifi_server_protocol_uri_v3.so|321aaf5822398fc8db8d94127848a8ca73f0454c
-vendor/lib64/vendor.qti.gnss@1.0.so|5cc0d0c8e7a8083f5892eb303ab1e6d4c9d66639
-vendor/lib64/vendor.qti.gnss@1.1.so|9a516f4b1b55798f0ec1ebead0c653ad65546517
-vendor/lib64/vendor.qti.gnss@1.2.so|1266128a166aed91804aebc1513524eb09424f64
-vendor/lib64/vendor.qti.gnss@2.0.so|8dc78f86e141c05f5b404cb3236910896c10d941
-vendor/lib64/vendor.qti.gnss@2.1.so|81142c88b15688a671bd372f013dfb2e77d1998d
-vendor/lib64/vendor.qti.gnss@3.0.so|1c0b41eddcc4789e1ea842be02d511afad123a8e
-vendor/lib64/vendor.qti.gnss@4.0-service.so|04233086636be1aeaaedf88d3126803b0c40c11d
-vendor/lib64/vendor.qti.gnss@4.0.so|e38ae43982dc62bf48193a6c3eb2ae385adb37aa
-
-# GNSS configs - from m690-user 11 RKQ1.210607.001 00WW_3_710_SP05 release-keys
+# GPS - from helios-user 14 14-35-10.00-UG-U04-STD-HEL-04 44 release-keys
+vendor/app/CACertService/CACertService.apk|96d4904107360910acf418e94bdde246fc1283dd
+vendor/bin/hw/android.hardware.gnss@2.1-service-qti|b0da19b7e2cc6a7589d135bbda471a139dfca0a7
+vendor/bin/loc_launcher|6649bda3b6cea06d7fd1cc348611b0edac96b3a1
+vendor/bin/lowi-server|633e113bc4ef99398cbfbbb2054c99756296b2b0
+vendor/bin/xtra-daemon|ef28fdac3d50bcb2b1336203be5c2efb25e5f399
+vendor/bin/xtwifi-client|a3ce76fa9cbcddf8d0f0e6976b8f32626daa10bf
+vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc|7daed399c666f71707be7817f928478ca6dab6d3|578f8c3f94a92224011f946274f833d67dbdfc24
+vendor/etc/vintf/manifest/vendor.qti.gnss@4.3-service.xml|7595c487d8096e8f759d3025c3ee59d351b42709
 vendor/etc/apdr.conf|52c9b4265e55c87ddf07c9b60817b3c09420712a
 vendor/etc/flp.conf|8c8642685c225fa0b715c284481018a527dae451
-vendor/etc/gps.conf|5c23a73732d7a7dbb3f702f86a9c3599b37bab4b
-vendor/etc/izat.conf|8cda837952589ac4773244e86f5554b04cbacc53
-vendor/etc/lowi.conf|2045e83483849a124e5fef052b59190f1b784df0
+vendor/etc/gps.conf|21177e3f6ce595b2756e70268b25a04e6269dab4
+vendor/etc/izat.conf|7e5ef263b69b12370e2f330c7c4db37d81da8535
+vendor/etc/lowi.conf|3d3a45c0cde54a4c3ccadc8485b76e6acb2418d6
 vendor/etc/sap.conf|b5ea86d9d9ee36dc13194474d343dae36f6fa032
 vendor/etc/xtwifi.conf|ac2189707c0016c31846ccec73e8857d7f566605
+vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so|2a530e62c1f3ce444956120e02355c2763525d34
+vendor/lib64/hw/vendor.qti.gnss@4.3-impl.so|5559404e0cb23e9ec8913ec887d86bd02b676060
+vendor/lib64/libbatching.so|2327c6d131c927db48657d6111aea58ce6c6aa39
+vendor/lib64/libcacertclient.so|3d4d22eda4f1a1284f93d9846c277693c95e8d5f
+vendor/lib64/libdataitems.so|c91cb8a46678d3053ab35174f78fb3d601fc7a01
+vendor/lib64/libgdtap.so|1f7a6db413f607ee2180522d05bf8c72baaebe2f
+vendor/lib64/libgeofencing.so|dde2567be202a4266e4f577385b12fbd6b1f5a49
+vendor/lib64/libgnss.so|6cf7ddf0c9a7afbba32bbf3964b2c247f01bac47
+vendor/lib64/libgps.utils.so|cfa46f38995fa4ad61ae8ccd1dc646a46d43440d
+vendor/lib64/libizat_client_api.so|4b7fa78decfcbaba9ff5a4c2c8477fb2c953d87f
+vendor/lib64/libizat_core.so|d1db133f098118c81173bcc1c34679003097cb23
+vendor/lib64/liblbs_core.so|19031688e6988993bc1d80fe4e9a55b067955fa5
+vendor/lib64/libloc_api_v02.so|26e1c122827c3610c0bc7f5b90cea7c5694bf258
+vendor/lib64/libloc_core.so|4eea09e674f819041975b375e151f6d7cecda287
+vendor/lib64/liblocation_api.so|c822a9f2aa1817759afb9f76ac93c4d6d21be7ea
+vendor/lib64/liblocationservice.so|370031f0346df471bcc234fc42403db3cf01816a
+vendor/lib64/liblocationservice_glue.so|6ad580d8eaab482b2c5a21090623552a5653d23a
+vendor/lib64/liblowi_client.so|c4a5bc832e179fcc266ca1ffb3409b57de9ac7a1
+vendor/lib64/libqcc_file_agent.so|f855d118d78ba8fca4d7ccca7ba2ceb2b9a71025
+vendor/lib64/libqdma_file_agent.so|05507a8538735c3ebb6d5d1949de0864aa0f9286
+vendor/lib64/libxtadapter.so|7ade076b241dcf16ef16ec7f465c2529207f539f
+vendor/lib64/vendor.qti.gnss@1.0.so|9388694c9e2c292287bbb51b645cb1f6bcbe88b4
+vendor/lib64/vendor.qti.gnss@1.1.so|8bd79b518b15b8216ea7beb12846267c1edb582f
+vendor/lib64/vendor.qti.gnss@1.2.so|64afa45e69831516dc7fbbb382cda79f4ef7de4b
+vendor/lib64/vendor.qti.gnss@2.0.so|8ab22790a4086f1ae0c3cd18d237c8e820a7dc0e
+vendor/lib64/vendor.qti.gnss@2.1.so|7e97718b48e7df118414483310f833e54753ef23
+vendor/lib64/vendor.qti.gnss@3.0.so|883eb889c549afa3370b306acff45d1e33e735a1
+vendor/lib64/vendor.qti.gnss@4.0.so|3850690bd4c45b1a9240771af827be49c168dd5b
+vendor/lib64/vendor.qti.gnss@4.1.so|90783aa82a75b2f916958be8f2dbee777fe5c0ed
+vendor/lib64/vendor.qti.gnss@4.2.so|3d509be88474d7f6b500773cafd41deaddd1f5c5
+vendor/lib64/vendor.qti.gnss@4.3-service.so|d89dd6420af16f66922eb2af7a2e64237ab939ae
+vendor/lib64/vendor.qti.gnss@4.3.so|7a4ccdf33b42b045d22da2633ccac333873d182b
+vendor/lib64/vendor.qti.hardware.cacert@1.0.so|2a6555622677c9c13ddc27250da110a4a8bbe6aa
+vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so|a798b7ac5e4f321f8df48f2e485ab59da4f6daf0
 
-# Graphics
-vendor/lib/egl/eglSubDriverAndroid.so
-vendor/lib/egl/libEGL_adreno.so;SYMLINK=vendor/lib/libEGL_adreno.so
-vendor/lib/egl/libGLESv1_CM_adreno.so;DISABLE_CHECKELF
-vendor/lib/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib/libGLESv2_adreno.so
-vendor/lib/egl/libQTapGLES.so
-vendor/lib/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib/libq3dtools_adreno.so;DISABLE_CHECKELF
-vendor/lib/egl/libq3dtools_esx.so;DISABLE_CHECKELF
-vendor/lib/hw/vulkan.sdm660.so
-vendor/lib/libC2D2.so
-vendor/lib/libCB.so;DISABLE_CHECKELF
-vendor/lib/libOpenCL.so
-vendor/lib/libadreno_utils.so
-vendor/lib/libbccQTI.so
-vendor/lib/libc2d30_bltlib.so
-vendor/lib/libgsl.so;DISABLE_CHECKELF
-vendor/lib/libllvm-glnext.so
-vendor/lib/libllvm-qcom.so
-vendor/lib/libpvr.so
-vendor/lib/librs_adreno.so;DISABLE_CHECKELF
-vendor/lib/librs_adreno_sha1.so
-vendor/lib64/egl/eglSubDriverAndroid.so
-vendor/lib64/egl/libEGL_adreno.so;SYMLINK=vendor/lib64/libEGL_adreno.so
-vendor/lib64/egl/libGLESv1_CM_adreno.so;DISABLE_CHECKELF
-vendor/lib64/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib64/libGLESv2_adreno.so
-vendor/lib64/egl/libQTapGLES.so
-vendor/lib64/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib64/libq3dtools_adreno.so;DISABLE_CHECKELF
-vendor/lib64/egl/libq3dtools_esx.so;DISABLE_CHECKELF
-vendor/lib64/hw/vulkan.sdm660.so
-vendor/lib64/libC2D2.so
-vendor/lib64/libCB.so;DISABLE_CHECKELF
-vendor/lib64/libOpenCL.so
-vendor/lib64/libadreno_utils.so
-vendor/lib64/libbccQTI.so
-vendor/lib64/libc2d30_bltlib.so
-vendor/lib64/libgsl.so
-vendor/lib64/libllvm-glnext.so
-vendor/lib64/libllvm-qcom.so
-vendor/lib64/libpvr.so
-vendor/lib64/librs_adreno.so;DISABLE_CHECKELF
-vendor/lib64/librs_adreno_sha1.so
+# Graphics - from helios-user 14 14-35-10.00-UG-U04-STD-HEL-04 44 release-keys
+vendor/lib/egl/eglSubDriverAndroid.so|501f7cf3ec55d4ded5f5921e4fe0a0822d077d46
+vendor/lib/egl/libEGL_adreno.so|42f0f4ab0ca69d7ba880bb9afcb0fb6f4290df98
+vendor/lib/egl/libGLESv1_CM_adreno.so|1e6924d8c36508360d38e764618b25b0443c4d8e
+vendor/lib/egl/libGLESv2_adreno.so|dec5129905a4a8f1330e92e5006783958757a53d
+vendor/lib/egl/libq3dtools_adreno.so|f59f0611355ff8b5ce3cfb97abdf49f5183052ac
+vendor/lib/egl/libq3dtools_esx.so|8b1682fc01c4a27dc76fb3f7c0bbc67aee9554b3
+vendor/lib/libC2D2.so|052f9701170bbfd82b6f028ad2524baff5aa1eab
+vendor/lib/libCB.so|8d3e11d71ff3fec50dc0b08a69110b14446410cc
+vendor/lib/libOpenCL.so|b2cf8b9102129029c56bbeaf6a3e4728c2ca6a57
+vendor/lib/libVkLayer_q3dtools.so|c5268196251eea003c48dc1fc596785ae455fe56
+vendor/lib/libadreno_utils.so|57dc2426c25c16a4f250f23a7dae9d7239c349d1
+vendor/lib/libc2d30_bltlib.so|6e086b51de5f0b8fb45b18fdec7b4e7d5182420b
+vendor/lib/libgpudataproducer.so|7c7705a943521fb72d561ebe2f6cf5ef5745786f
+vendor/lib/libgsl.so|ac60cdedd871e7c7d3e9480bad67f9b30fa9f264
+vendor/lib/libllvm-glnext.so|821440a54f02c2ed401f0ac646475cb6e8fc171f
+vendor/lib/libllvm-qcom.so|c06529a517ac14d22c098eb1d8269cadab99e63b
+vendor/lib/librs_adreno.so|53c5e960452f14958e6893241995d1a42e576823
+vendor/lib/libtinyxml2_1.so|dfe3efe3a6e5ad5beb6e4e9adb02eef475b421a7
+vendor/lib64/egl/eglSubDriverAndroid.so|52cc62010df3eabdd440fc756e2c4abee35dabeb
+vendor/lib64/egl/libEGL_adreno.so|ccb68f54eda4135c29b2cf059cc5d9cc2ed6b029
+vendor/lib64/egl/libGLESv1_CM_adreno.so|eac8a37f8a2cc19cfd0285ec54b0ea1bacfd7430
+vendor/lib64/egl/libGLESv2_adreno.so|b44516e1c7f08a6951773f2e81de88d286cc1588
+vendor/lib64/egl/libq3dtools_adreno.so|7c40ea686640d4a481aacd2426347ef6abb593e7
+vendor/lib64/egl/libq3dtools_esx.so|9804a9f9024d85ea751683607ce9ae493956d4c3
+vendor/lib64/libC2D2.so|71f0be54afc7f8f9c8feeb9debc849706f8fb698
+vendor/lib64/libCB.so|5e736ae045d088f7994b1cd5e4895844e95d6d6f
+vendor/lib64/libOpenCL.so|c37467e36804a74722059a36e3dce3a7befb7f2f
+vendor/lib64/libVkLayer_q3dtools.so|5b48f23209ffb5d91f87dd299d4ea4e2b4f27268
+vendor/lib64/libadreno_utils.so|fd2e8e7ef74a136cab7e309827f5aaab402c9b37
+vendor/lib64/libc2d30_bltlib.so|a9eb5dcac16a17967b7418f7359070e150e519af
+vendor/lib64/libgpudataproducer.so|62dfd1ed6b47d4f30aa1861e447a3547d39806ca
+vendor/lib64/libgsl.so|d39c92144b3bde0a15be1a0c9599ee957e3f79c0
+vendor/lib64/libllvm-glnext.so|b7f8cb7a5ab0056322cecce80172aff7c3decf0c
+vendor/lib64/libllvm-qcom.so|b55e4fbe013caee2357f77397be052db5d9e4484
+vendor/lib64/librs_adreno.so|3f8bccf5b5907cebc0d4edb2e804dc3f57fdf8eb
 
-# Graphics (HDR)
-vendor/lib/libhdr_tm.so
-vendor/lib64/libhdr_tm.so
+# Graphics (HDR) - from helios-user 14 14-35-10.00-UG-U04-STD-HEL-04 44 release-keys
+vendor/lib64/libhdr_tm.so|d8b25ba8b8f8a157b2a6f9ba6fb0d89a96dd4030
 
-# Graphics (SDM)
-vendor/lib/libqseed3.so
-vendor/lib/libsdm-color.so
-vendor/lib/libsdm-disp-vndapis.so
-vendor/lib/libtinyxml2_1.so
-vendor/lib64/libqseed3.so
-vendor/lib64/libsdm-color.so
-vendor/lib64/libsdm-diag.so
-vendor/lib64/libsdm-disp-vndapis.so
-vendor/lib64/libsdmextension.so
-vendor/lib64/libtinyxml2_1.so
+# Graphics (SDM) - from helios-user 14 14-35-10.00-UG-U04-STD-HEL-04 44 release-keys
+vendor/lib64/libqseed3.so|0a81db5fc5b762a8fd246dfccd69014662fe35eb
+vendor/lib64/libsdm-color.so|8c997688894a6373787e1eabbb62f719bbb632b4
+vendor/lib64/libsdm-diag.so|1b27bcbdba062afc1d414b30c1efcd08ac4140cf
+vendor/lib64/libsdm-disp-vndapis.so|c8408b9e8d9ee4cf82eb0c0000fb348848ff3c55
+vendor/lib64/libsdmextension.so|9a4342e9417fd7cee2eb4d34c55762c4de6811ae
+vendor/lib64/libtinyxml2_1.so|5bdb5c7785f90ad4ebaa7085a4f83d86567331f9
 
 # Graphics Firmware
 vendor/firmware/a512_zap.b00
@@ -2870,135 +2807,102 @@ vendor/etc/init/vendor.qti.adsprpc-service.rc|54588df8e7da58c66838028d2284986b96
 vendor/etc/init/vendor.qti.rmt_storage.rc|bc212c6353c2ded44ae4d759605fbbe55aa4fa3f
 vendor/etc/init/vendor.qti.tftp.rc|b27f188cbffba470a4510d50e46ff7c8446c22cb
 
-# IRQ HAL - from m690-user 11 RKQ1.210607.001 00WW_3_710_SP05 release-keys
-vendor/bin/msm_irqbalance|b075c2f4092c175950a2c26d19bf2013e2efd6d5
+# IRQ HAL - from helios-user 14 14-35-10.00-UG-U04-STD-HEL-04 44 release-keys
+vendor/bin/msm_irqbalance|43c4f34f3c98556903f9cef3493c2e52fa3b792c
+
+# Keymaster - from helios-user 14 14-35-10.00-UG-U04-STD-HEL-04 44 release-keys
+vendor/bin/hw/android.hardware.keymaster@3.0-service-qti|7ac96fb43095a95cadf80d6df7c39f5f2d092268
+vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so|748bddc7f3c18c8faecf73d47f7435987d1db1b9
+vendor/lib64/libkeymasterdeviceutils.so|fddfafd32a82fd1af090ede578152a590e1da63d
+vendor/lib64/libkeymasterprovision.so|7f198792c33d40c05a8aa26d26ee22d7b395ef00
+vendor/lib64/libkeymasterutils.so|fbbf18ae5a033c2612188557eca7113ddd6c52bb
+vendor/lib64/libqtikeymaster4.so|61cba93f58c30ec5a70fd8e38001868ccfea9e99
 
 # Keymaster
-vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
-vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
 vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc
-vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
-vendor/lib64/libkeymasterdeviceutils.so
-vendor/lib64/libkeymasterprovision.so
-vendor/lib64/libkeymasterutils.so
-vendor/lib64/libqtikeymaster4.so
 
-# Latency - from m690-user 11 RKQ1.210607.001 00WW_3_710_SP05 release-keys
-vendor/lib64/vendor.qti.hardware.data.latency@1.0.so|c433c73b5469b787cb7fb70b05b83190b319edd6
-vendor/lib64/vendor.qti.latency@2.0.so|60ab3143325e855f8c72e3f603c28efe2e7227b9
-vendor/lib64/vendor.qti.latency@2.1.so|47f0d25338274af94764be9d39eabef8cf5ca790
+# Latency - from helios-user 14 14-35-10.00-UG-U04-STD-HEL-04 44 release-keys
+vendor/lib64/vendor.qti.hardware.data.latency@1.0.so|17ef49c7d93b14dd95393093582c581349776a5f
+vendor/lib64/vendor.qti.latency@2.0.so|adb1c9e473a274828c1c25d1634674be722b2999
+vendor/lib64/vendor.qti.latency@2.1.so|89c180755e0b99a5c726f80cdfa083dbed2387f2
 
-# Listen - from m690-user 11 RKQ1.210607.001 00WW_3_710_SP05 release-keys
-vendor/lib/libadpcmdec.so|b3ec2cc197b682aa6ae7e1da9c8f25cc1aa75750
-vendor/lib/libgcs-calwrapper.so|7bbad068766b970e3fa576f372ed36b87e6d7898
-vendor/lib/libgcs-ipc.so|dd9c0e6e25b4b1c8a80cec843a7eec990111447f
-vendor/lib/libgcs-osal.so|413c0b9b767d8aa1da477f89b162d5b13604e0cf
-vendor/lib/libgcs.so|16dd5d2893062e717921674f92338d12a6a823fc
-vendor/lib/libsmwrapper.so|0fbf611c9a597f7c70bfd2363dfc7f465d1dafd5
-vendor/lib64/libgcs-calwrapper.so|a5ffefbb0bd9ffddcc25859e18b7a444cd4d7cba
-vendor/lib64/libgcs-ipc.so|cf81a1d80a3faf4c1dd201477d8d80ec92a56dba
-vendor/lib64/libgcs-osal.so|6563b261374b1cf54ce1eaf4eda4b98ea2a0ecd7
-vendor/lib64/libgcs.so|7cf96f4e509fe7f88cc73a124ad9a74017438b08
+# Listen - from helios-user 14 14-35-10.00-UG-U04-STD-HEL-04 44 release-keys
+vendor/lib/libadpcmdec.so|4b81681ed187ee7e6dbffa5cab1117d3b4fd12e6
+vendor/lib/libgcs-calwrapper.so|987d336b2b25461ec8b9b187185b634e3a4ec0e5
+vendor/lib/libgcs-ipc.so|2927d93f8a084b262c854a5fb3c463437537f7f3
+vendor/lib/libgcs-osal.so|6c802e66a173e4744b0022adc67eebada70f9ad0
+vendor/lib/libgcs.so|22112dcc1fe625986f728ca2970b3f92187423c6
+vendor/lib/libsmwrapper.so|645528dd36c6ace92ee2452e86a9a474d3d49ea4
 
-# Media
-vendor/lib/libI420colorconvert.so
-vendor/lib/libOmxVideoDSMode.so
-vendor/lib/libOmxVpp.so
-vendor/lib/libavcodec.so
-vendor/lib/libavformat.so
-vendor/lib/libavutil.so
-vendor/lib/libgpustats.so
-vendor/lib/libmm-color-convertor.so
-vendor/lib/libmmosal_proprietary.so
-vendor/lib/libmmsw_detail_enhancement.so
-vendor/lib/libmmsw_math.so
-vendor/lib/libmmsw_opencl.so
-vendor/lib/libmmsw_platform.so
-vendor/lib/libmulawdec.so
-vendor/lib/libstagefright_soft_qtiflacdec.so
-vendor/lib/libswresample.so
-vendor/lib/libvpphvx.so
-vendor/lib/libvpplibrary.so
-vendor/lib/libvqzip.so
-vendor/lib/libwfdcommonutils_proprietary.so
-vendor/lib/libwfdmmservice.so
-vendor/lib/vendor.qti.hardware.vpp@1.1.so
-vendor/lib64/libI420colorconvert.so
-vendor/lib64/libOmxVpp.so
-vendor/lib64/libavcodec.so
-vendor/lib64/libavformat.so
-vendor/lib64/libavutil.so
-vendor/lib64/libgpustats.so
-vendor/lib64/libmm-color-convertor.so
-vendor/lib64/libmmosal_proprietary.so
-vendor/lib64/libmmsw_detail_enhancement.so
-vendor/lib64/libmmsw_math.so
-vendor/lib64/libmmsw_opencl.so
-vendor/lib64/libmmsw_platform.so
-vendor/lib64/libmulawdec.so
-vendor/lib64/libstagefright_soft_qtiflacdec.so
-vendor/lib64/libswresample.so
-vendor/lib64/libvpphvx.so
-vendor/lib64/libvpplibrary.so
-vendor/lib64/vendor.qti.hardware.vpp@1.1.so
+# Media - from helios-user 14 14-35-10.00-UG-U04-STD-HEL-04 44 release-keys
+vendor/lib/libOmxVpp.so|84c04bada14944b2f383cffee2d8a36876c64c1c
+vendor/lib/libmmosal.so|400faa144d8ba5529fbab317d82b00abda16abe6
+vendor/lib/libmmsw_detail_enhancement.so|eebe75e8bd4f09cdba974c557f5fb6d7ea35d9a5
+vendor/lib/libmmsw_math.so|0cb2bae2422358a1b827a13386796283d88765db
+vendor/lib/libmmsw_opencl.so|ada5a587788fd9a0efbc9780d3005960fe5f2da2
+vendor/lib/libmmsw_platform.so|99a759cd82a825105f93e60c72b0822beab36e05
+vendor/lib/libmulawdec.so|e4c09fd7fe6a1a3f5ccc9d17789e97f34fae6282
+vendor/lib/libvpphvx.so|ec3f9dce7cdaeff4670fde9a2ba6e345b46c99ea
+vendor/lib/libvpplibrary.so|2a9a178a5e74125c0e42336d4d4f5eb7d2a52dc0
 
-# Perf
-vendor/bin/hw/vendor.qti.hardware.perf@2.0-service
-vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc
-vendor/etc/perf/commonresourceconfigs.xml
-vendor/etc/perf/perfboostsconfig.xml
-vendor/etc/perf/perfconfigstore.xml
-vendor/etc/perf/targetconfig.xml
-vendor/etc/perf/targetresourceconfigs.xml
-vendor/lib/libperfconfig.so
-vendor/lib/libperfgluelayer.so
-vendor/lib/libqti-perfd-client.so
-vendor/lib/libqti-perfd.so
-vendor/lib/libqti-util.so
-vendor/lib64/libadaptlaunch.so
-vendor/lib64/liblearningmodule.so
-vendor/lib64/libmeters-ns.so
-vendor/lib64/libperfconfig.so
-vendor/lib64/libperfgluelayer.so
-vendor/lib64/libqti-perfd-client.so
-vendor/lib64/libqti-perfd.so
-vendor/lib64/libqti-util.so
+# Mink-Lowi Interface daemon
+vendor/bin/mlid
+vendor/lib/libminksocket.so
+vendor/lib/libqcbor.so
+vendor/lib64/libminksocket.so
+vendor/lib64/libqcbor.so
 
-# Perf-IOP
-vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so
-vendor/lib64/libqti-iopd-client.so
-vendor/lib64/vendor.qti.hardware.iop@1.0.so
-vendor/lib64/vendor.qti.hardware.iop@2.0.so
+# PASR manager - from helios-user 14 14-35-10.00-UG-U04-STD-HEL-04 44 release-keys
+vendor/lib/vendor.qti.memory.pasrmanager@1.0.so|508a1281deed810d2f4f8b555d6ba9d8f2145a42
+vendor/lib/vendor.qti.memory.pasrmanager@1.1.so|f8b9c709b13c80143c3a9f976e716cdfd97989d9
+vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so|52532a56ace827b3fc297f785354e45bcaf6037c
+vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so|83ee55d805ca12544acdbb34846037c8424af056
 
-# Peripheral - from m690-user 11 RKQ1.210607.001 00WW_3_710_SP05 release-keys
-vendor/bin/pm-proxy|42383b9163716d8e6d81f0516e9cf09f22ea8b06
-vendor/bin/pm-service|b0a5d3491615ef9a237d93a393082105e3c0097c
-vendor/lib64/libperipheral_client.so|9bfd41e276e16b8f7c6808f3d87531fc5be4cdd5
+# Perf - from helios-user 14 14-35-10.00-UG-U04-STD-HEL-04 44 release-keys
+vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|e900362841799a94b6636e259a2f3574d7763ca1
+vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc|459b4c23550a56ac545f78c6d391f3d7dd9ba45b
+vendor/etc/perf/commonresourceconfigs.xml|c03bd36054bb5d327ad12dc711b58b3f658d261c
+vendor/etc/perf/commonsysnodesconfigs.xml|63d293adfd5aa82551aa8fc0d30b38bffdcc497e
+vendor/etc/perf/perfboostsconfig.xml|1b925efc5be95c1fbcec228a609ffa59b1f6ecc9
+vendor/etc/perf/perfconfigstore.xml|7aed790478c9796246ea7c4b3bb6f7d31172ecb3
+vendor/etc/perf/targetconfig.xml|376ae331df9d6c30b6208f25d04ae4ea11c0e2ea
+vendor/etc/perf/targetresourceconfigs.xml|008f1451b538b5af6f4fb2241e2893e4c38bc07a
+vendor/lib/libperfconfig.so|0fcf2a74d3d8a0ab1047a83960adb1cdf9d70118
+vendor/lib/libperfgluelayer.so|0851b8f7d2e50c66d92055ca52a29453a961ca3e
+vendor/lib/libperfioctl.so|6de3b4fa79f47aeaac6f931de00b3036bb55f39a
+vendor/lib/libqti-perfd-client.so|36c9e866b755da797ff458c5901cebcc5910db50
+vendor/lib/libqti-perfd.so|1029d124754ce31950a145546ac7d03388d1bdd5
+vendor/lib/libqti-util.so|8f449de8af1d5c0f7a4120f8163c3fc78bc8f47d
+vendor/lib64/libperfconfig.so|b5c5d60f0543f2a9069c9a74257a88936522b298
+vendor/lib64/libperfgluelayer.so|822071dd39f803288ab0ff0e4165ab34be5d9a27
+vendor/lib64/libperfioctl.so|855ece89da103e4ee098a9c8c8dd8e18af0df98b
+vendor/lib64/libqti-perfd-client.so|c1a918d4ade719e93ba7d009169d613f9c9bf3f5
+vendor/lib64/libqti-perfd.so|d8f201151df65db23d10002b994e9fea6322aa2d
+vendor/lib64/libqti-util.so|89a6e6c5f70898a0a9a9b61ca9d5ab0e97406abc
 
-# Power-off alarm - from m690-user 11 RKQ1.210607.001 00WW_3_710_SP05 release-keys
-product/app/PowerOffAlarm/PowerOffAlarm.apk|1700001b0a54c29c9ce114ef9829f861c5edc6e9
-vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|586b142f9bc4bf3098b4962682c4de1c13810f9b
-vendor/bin/power_off_alarm|b8c7ddc1bed336753c3746925fd0f4a9925aa36c
+# Peripheral - from helios-user 14 14-35-10.00-UG-U04-STD-HEL-04 44 release-keys
+vendor/bin/pm-proxy|41df355eb75dfb69b07083a37c3745dd6d084b36
+vendor/bin/pm-service|bf5ca6e5dfd398549bdd563c6e3edea12f4c027a
+vendor/lib64/libperipheral_client.so|31fab3060caeef08bcafb83f01a452bc29029723
+
+# Postprocessing - from helios-user 14 14-35-10.00-UG-U04-STD-HEL-04 44 release-keys
+vendor/bin/hw/vendor.display.color@1.0-service|fdccaf00679a2cc64e6bf66d323a01ff083ce79e
+vendor/bin/mm-pp-dpps|bf0892746c71592731e0b9ca72cdfe5316f4b13b
+vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
+vendor/lib64/libdisp-aba.so|e1dc89192ef58160a4b30210345fb8e09e22898e
+vendor/lib64/vendor.display.color@1.0.so|d4bef738354e70dd93196e1c6bc2e523d7b723f2
+vendor/lib64/vendor.display.postproc@1.0.so|3f2dcc8a1169dd0f1981d2e5d33e3fe26719b7e8
+
+# Power-off alarm - from helios-user 14 14-35-10.00-UG-U04-STD-HEL-04 44 release-keys
+system_ext/app/PowerOffAlarm/PowerOffAlarm.apk|286b697582224fa492b0b433b0fa2dffce44a755
+vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|e0f7f753052162654541516c90983be7f520dbe2
+vendor/bin/power_off_alarm|4ec40897bc23beb612603bb911f555d5ce72fb66
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|a03a9a1c818595b19272ea6ffb466e23a7fc3b05
-vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|4129558506dc078c03679ba362acda4755457742
-vendor/lib64/vendor.qti.hardware.alarm@1.0.so|dcfdc04b4e0c6e6a4ffa60e1694268bd0327e65c
+vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|9903e0919bb341f545ac7a98267c59230695d7ad
+vendor/lib64/vendor.qti.hardware.alarm@1.0.so|23cdd38d2fade0c54e299e7d50d472146957a4eb
 
-# QCC - from m690-user 11 RKQ1.210607.001 00WW_3_710_SP05 release-keys
-system_ext/bin/qccsyshalservice|cc7b5fcc8d1b2e5b8c10078649cf7f34c2e683d3
-system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.0-service.rc|a6be39306a3d6c1f6fbe54b59282d11ce12a3319
-system_ext/lib64/libqcc.so|42114c84a6cdf2cff837015f4b106ab19bd1270e
-system_ext/lib64/libqcc_file_agent_sys.so|afa96a113e3b600253580bc103100347f354da92
-system_ext/lib64/vendor.qti.hardware.qccsyshal@1.0-halimpl.so|934a3e11f3f0d1ab0878eb2892ed89c56b6d43b3
-system_ext/lib64/vendor.qti.hardware.qccsyshal@1.0.so|10076c4ace37de1a7d91ed5c8d665e739e02774c
-system_ext/lib64/vendor.qti.hardware.qccvndhal@1.0.so|e42562ad6ad8655f1aaa836210fe29f6223c05a8
-vendor/bin/hw/vendor.qti.hardware.qccvndhal@1.0-service|b60b09fa92e8b400129c021c6b51c0c63dbf1edd
-vendor/bin/qcc-trd|d2ac6458e73e27693428357ea913e2bd6b4ca287
-vendor/etc/init/init.qdmastats.rc|837b16bf9600715345fc65d5d6c98ce97f2d4583
-vendor/etc/init/vendor.qti.hardware.qccvndhal@1.0-service.rc|afeb332a4750a11587658fcc9a75a27f63bbccdd
-vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so|0b1e323871e2828b9e8970e42635e3f7999a17e4
-vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so;MODULE_SUFFIX=_vendor|3ff445db2dd2db1a1068fe70a54a6c04fbdd3123
-vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so|6f587a9a2889a75559539b06c167960f06b01c42
-vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so;MODULE_SUFFIX=_vendor|01b1d11316f5dcd8c1012a55ff01399081c79940
+# Public libraries - from helios-user 14 14-35-10.00-UG-U04-STD-HEL-04 44 release-keys
+vendor/etc/public.libraries.txt|355226a71ce2c28cde1c0fc64c5d70341149f8ea
 
 # QMI
 system/etc/permissions/qti_permissions.xml:system_ext/etc/permissions/qti_permissions.xml
@@ -3007,8 +2911,6 @@ vendor/bin/pd-mapper
 vendor/lib/libdiag.so
 vendor/lib/libdsutils.so
 vendor/lib/libidl.so
-vendor/lib/libminkdescriptor.so
-vendor/lib/libminksocket.so
 vendor/lib/libqcci_legacy.so
 vendor/lib/libqdi.so
 vendor/lib/libqdp.so
@@ -3023,8 +2925,6 @@ vendor/lib/libqmiservices.so
 vendor/lib64/libdiag.so
 vendor/lib64/libdsutils.so
 vendor/lib64/libidl.so
-vendor/lib64/libminkdescriptor.so
-vendor/lib64/libminksocket.so
 vendor/lib64/libqcci_legacy.so
 vendor/lib64/libqdi.so
 vendor/lib64/libqdp.so
@@ -3038,6 +2938,24 @@ vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmiservices.so
 vendor/lib64/qtibus.so
 vendor/lib64/qtimutex.so
+
+# Qseecom - from helios-user 14 14-35-10.00-UG-U04-STD-HEL-04 44 release-keys
+vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service|a923b55ee6799bf299e8bf74707fceca6cb8184d
+vendor/bin/qseecomd|d997e12ace9e5ce356a4459d0d5550b03c92abe6
+vendor/etc/init/qseecomd.rc|3857a18de07bcbf8296c280f02c40e9674e522ec
+vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc|0f43244d70d5efc1e4f089b926a9dc4f59e53db1
+vendor/lib/libQSEEComAPI.so|9d891ae6bccd1624b0794682630f7c781fe10474
+vendor/lib/libdisplayconfig.qti.so|dbeb7bc0c7b82f4880289eae75e03362fb67726f
+vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so|5dac5a44ec69223c4efc7716280d58a3cba45298
+vendor/lib64/libGPreqcancel.so|05c3075ea7e36e5c5b56e2df60944ee69427e0ef
+vendor/lib64/libGPreqcancel_svc.so|1a1ff3f70ce592173d6398f822391b03fd5bee13
+vendor/lib64/libQSEEComAPI.so|5f86f310d93deded9447ee14dcf76b38d5e53bec
+vendor/lib64/libdisplayconfig.qti.so|1f80505b324335e3fc4faaddd41aa00427de6fb7
+vendor/lib64/libdrmfs.so|5614abef4cd59d76c94c1c6c42276ddc39c81c00
+vendor/lib64/libdrmtime.so|10b57e3f6dddf974924bc90fb620fd4d0505ef89
+vendor/lib64/librpmb.so|302a35cfb0364618c2e2f448214e90b513c0eb25
+vendor/lib64/libssd.so|a41f48249e7b996652233183d3233fc9aa7b47d2
+vendor/lib64/vendor.qti.hardware.qseecom@1.0.so|b41cc6ade0e907297bc7f4b70cc6b95276a584c8
 
 # Radio (IMS) - from m690-user 11 RKQ1.210607.001 00WW_3_710_SP05 release-keys
 system_ext/app/imssettings/imssettings.apk|516d8be0f869e1733d0287722897420c57c73be5
@@ -3232,17 +3150,17 @@ vendor/lib64/sensor_calibrate.so
 vendor/etc/sensors/sensor_def_18321.conf
 vendor/etc/sensors/sensor_def_qcomdev.conf
 
-# Soter - from m690-user 11 RKQ1.210607.001 00WW_3_710_SP05 release-keys
-system_ext/framework/vendor.qti.hardware.soter-V1.0-java.jar|83227d66df8f047d69f5b90fe16339794fa75ce3
-vendor/bin/hw/vendor.qti.hardware.soter@1.0-service|8e315a85eeeb94a51f1533c80212d2fc0ec88760
+# Soter - from helios-user 14 14-35-10.00-UG-U04-STD-HEL-04 44 release-keys
+system_ext/framework/vendor.qti.hardware.soter-V1.0-java.jar|dd528c0dcceb3168658ca657e080e9798bcd766c
+vendor/bin/hw/vendor.qti.hardware.soter@1.0-service|16ae56e88e6e7ca414e723d64e53fbb089e9ca8f
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc|76447a61ad5529949365eeb7e8ca000e48bd28ae
-vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so|7d4c9a9e2a91c0a675b5f30108fb288b98d6ddc0
-vendor/lib64/vendor.qti.hardware.soter@1.0.so|5496f7816036ef71aec0116864032f8a6078aee7
+vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so|9f7c493c37c5417d1f9f79ddfa9e1d773a64d0a7
+vendor/lib64/vendor.qti.hardware.soter@1.0.so|0d49d2eb7e0a2caee1ff41c13d220cc042e2a9d4
 
-# SSR - from m690-user 11 RKQ1.210607.001 00WW_3_710_SP05 release-keys
-vendor/bin/ssr_setup|e7e6e81e2b5eed83e31cb70fd178a97877daa4a9
-vendor/bin/subsystem_ramdump|a8188725e6ab33effdb220dffdaac3eb830b1dc2
-vendor/lib64/libsubsystem_control.so|3ae879485eedb7d1bc84a47ddef474608ddb4d3e
+# SSR - from helios-user 14 14-35-10.00-UG-U04-STD-HEL-04 44 release-keys
+vendor/bin/ssr_setup|c1a76f2b30aa556f2e3270619cd076ad4de4b4e4
+vendor/bin/subsystem_ramdump|b217f185dd9ad90a1607616adb31fb8751d651e5
+vendor/lib64/libsubsystem_control.so|64cebaa5d9530a902f244a8cb984e686a94d1ced
 
 # Touchpanel Firmware
 vendor/firmware/tp/18321/FW_HX_NF83112A_DSJM.img
@@ -3258,26 +3176,16 @@ vendor/firmware/tp/18321/FW_NT_NF36672_TIANMA_TEST.bin
 vendor/firmware/tp/18321/LIMIT_NT_NF36672_DEPUTE.img
 vendor/firmware/tp/18321/LIMIT_NT_NF36672_TIANMA.img
 
-# TUI - from m690-user 11 RKQ1.210607.001 00WW_3_710_SP05 release-keys
-vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|15378114c18fd1b1c8f9671f656396285ad1de48
-vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
-vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|4ba792ee3234dca4cd7ebbd7b3f9003c800f51b4
+# Thermal - from helios-user 14 14-35-10.00-UG-U04-STD-HEL-04 44 release-keys
+vendor/bin/thermal-engine|bfa8ea6463ca21b36f1830a9bdb96b7b40768c6d
+vendor/lib/libthermalclient.so|c95984e29617243ae7ce7f7da01663e6b0c87e94
+vendor/lib64/libthermalclient.so|4be5c7fd77a30758716a2ab65aae70fa60639177
 
-# Thermal - from m690-user 11 RKQ1.210607.001 00WW_3_710_SP05 release-keys
-vendor/bin/thermal-engine|6ee391c0b9f8d4ceea57521f584b75c60d2ffa09
-vendor/lib/libthermalclient.so|b2d69a3a3589eb0387c2f13cc10ff91072c27c9a
-vendor/lib64/libthermalclient.so|26475ef0d6b80fcf40c9490f795d21e46d3d9054
-vendor/lib64/libthermalfeature.so|a1d99d33946d99ca620c6f5a8f4759d600a89086
-
-# Time - from m690-user 11 RKQ1.210607.001 00WW_3_710_SP05 release-keys
-vendor/app/TimeService/TimeService.apk|aae6864069e8117bb8e899fe4b45c1865f76d682
-vendor/bin/time_daemon|48401d7f85c87aa3e12ce7b4a969a50cbf59c293
+# Time - from helios-user 14 14-35-10.00-UG-U04-STD-HEL-04 44 release-keys
+vendor/app/TimeService/TimeService.apk|7a30697354bbaeefd9c79cd84d14e0e3e06006df
+vendor/bin/time_daemon|22bc64c60ba3c60ae91b1dbd68eed75eff6e12e3
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
-vendor/lib64/libtime_genoff.so|8bb116ad297a5e4a94da2f10509509cb6e863a5f
-
-# UBWC - from m690-user 11 RKQ1.210607.001 00WW_3_710_SP05 release-keys
-vendor/lib64/libUBWC.so|2d716d9bb1c2d4ba42d3a850085c0d7d3a3b37f4
-vendor/lib64/libstreamparser.so|aa8ec0d2b9fd4a9c8da62905690383feacc1acf7
+vendor/lib64/libtime_genoff.so|1c2de2c94be03bba76cfcf56637037e680d1785d
 
 # WiFi
 vendor/bin/cnss-daemon

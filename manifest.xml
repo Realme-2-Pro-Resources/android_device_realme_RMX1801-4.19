@@ -40,6 +40,17 @@
         <fqname>@1.0::IGatekeeper/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.gnss</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IGnss</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.1::IGnss/default</fqname>
+        <fqname>@2.1::IGnss/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.graphics.composer</name>
         <transport>hwbinder</transport>
         <version>2.1</version>
@@ -355,22 +366,12 @@
     <hal format="hidl">
         <name>vendor.qti.hardware.perf</name>
         <transport>hwbinder</transport>
-        <version>2.0</version>
+        <version>2.2</version>
         <interface>
             <name>IPerf</name>
             <instance>default</instance>
         </interface>
-        <fqname>@2.0::IPerf/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.qccvndhal</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IQccvndhal</name>
-            <instance>qccvndhal</instance>
-        </interface>
-        <fqname>@1.0::IQccvndhal/qccvndhal</fqname>
+        <fqname>@2.2::IPerf/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.qseecom</name>
@@ -514,16 +515,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::ISoter/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.tui_comm</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ITuiComm</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ITuiComm/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.ims.callinfo</name>
