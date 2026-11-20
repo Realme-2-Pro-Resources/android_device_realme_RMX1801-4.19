@@ -148,7 +148,6 @@ vendor/lib/libstblur_capture_api.so
 vendor/lib/libstface_fd_api.so
 vendor/lib/libstface_seg_ocl.so
 vendor/lib/libstfaceunlockocl.so
-vendor/lib/libswscale.so
 vendor/lib/libvideoutils.so
 vendor/lib64/libDxHdcp.so
 vendor/lib64/libbase64.so
