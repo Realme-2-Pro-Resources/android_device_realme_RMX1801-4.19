@@ -39,7 +39,6 @@ on init
     write /dev/stune/top-app/schedtune.colocate 1
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
-    start vendor.qseecomd
     start keymaster-4-0
 
 on early-fs
@@ -125,11 +124,6 @@ on property:init.svc.vendor.per_mgr=running
 
 on property:sys.shutdown.requested=*
     stop vendor.per_proxy
-
-service vendor.qseecomd /vendor/bin/qseecomd
-   class core
-   user root
-   group root
 
 service thermal-engine /system/vendor/bin/thermal-engine
    class main
