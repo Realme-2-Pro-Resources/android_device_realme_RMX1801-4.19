@@ -53,6 +53,10 @@ lib_fixups: lib_fixups_user_type = {
 blob_fixups: blob_fixups_user_type = {
     'vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc': blob_fixup()
         .regex_replace('    disabled', '    #disabled'),
+    'vendor/lib/hw/camera.sdm660.so': blob_fixup()
+        .binary_regex_replace(b'/system/etc/camera/', b'/vendor/etc/camera/')
+        .sig_replace('30 68 4f f4 51 73 c1 68 d0 e9 0d 20', '30 68 4f f4 51 73 c1 68 d0 e9 12 20')
+        .sig_replace('31 68 08 9a 00 26 49 6b cb e9', '31 68 08 9a 00 26 89 6c cb e9'),
     'vendor/lib/libdepthmap.so': blob_fixup()
         .clear_symbol_version('remote_handle_close')
         .clear_symbol_version('remote_handle_invoke')
@@ -108,7 +112,6 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup()
         .add_needed("liblog.so"),
     (
-        'vendor/lib/hw/camera.sdm660.so',
         'vendor/lib/libarcvs.dep.so',
         'vendor/lib/libmmcamera2_sensor_modules.so',
         'vendor/lib/libmmcamera_interface.so',
