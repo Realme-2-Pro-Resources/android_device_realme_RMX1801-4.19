@@ -4,6 +4,9 @@ ro.vendor.display.ad.sdr_calib_data=/vendor/etc/OPPO_OLED_AD_calib.cfg
 ro.vendor.display.sensortype=2
 
 # Audio
+audio.adm.buffering.ms=4
+audio.sys.noisy.broadcast.delay=600
+audio.sys.offload.pstimeout.secs=3
 audio.deep_buffer.media=true
 audio.offload.min.duration.secs=30
 ro.af.client_heap_size_kbyte=7168
@@ -31,6 +34,7 @@ debug.sf.enable_hwc_vds=1
 debug.sf.hw=1
 persist.demo.hdmirotationlock=false
 persist.sys.sf.color_saturation=1.0
+ro.launcher.blur.appLaunch=0
 sdm.debug.disable_skip_validate=1
 vendor.display.disable_scaler=1
 vendor.display.disable_skip_validate=1
@@ -40,6 +44,9 @@ vendor.vidc.enc.disable_bframes=1
 vendor.vidc.enc.disable.pq=false
 vendor.vidc.dec.enable.downscalar=0
 vidc.enc.target_support_bframe=1
+
+# GMS-MS
+ro.com.google.clientidbase.ms=android-oppo-rev1
 
 # IMS
 persist.radio.VT_CAM_INTERFACE=1
@@ -64,6 +71,9 @@ ro.vendor.qti.sys.fw.bservice_enable=true
 # Netflix custom property
 ro.netflix.bsp_rev=Q660-13149-1
 
+# Notch
+ro.support_hide_display_cutout=true
+
 # QC framework value-adds
 ro.vendor.qti.va_odm.support=1
 
@@ -72,7 +82,6 @@ DEVICE_PROVISIONED=1
 gsm.lte.ca.support=0
 persist.radio.custom_exp_ecc=1
 ril.subscription.types=NV,RUIM
-rild.libpath=/system/vendor/lib64/libril-qc-hal-qmi.so
 ro.telephony.default_network=22,22
 telephony.lteOnCdmaDevice=1
 
