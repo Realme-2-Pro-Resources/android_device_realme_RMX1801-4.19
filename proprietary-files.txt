@@ -3023,6 +3023,10 @@ system_ext/etc/permissions/telephonyservice.xml|b7831598d3c19c6ce4ef431d1cc44d94
 system_ext/framework/qcrilhook.jar|f2888f922b8347417dfa86741feb8348795fce6f
 system_ext/framework/qti-telephony-common.jar|0db037785928aae043e9be7f49bddbefad43fbc3
 system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|26b725924d62c7fbd0ed72fe1f0786b18b2f8f36
+vendor/bin/qrtr-cfg|9019f1c99cb23913f540433285af0d26c397c121
+vendor/bin/qrtr-lookup|fb31961d7c966f09e5c77a2be17aa8af702fe90b
+vendor/bin/qrtr-ns|2b84b77bcd50e8c65c2151457f885eb434af4585
+vendor/lib64/libqrtr.so|b22ee7df87b35ba88b518f0b821cc601cd612183
 
 # Radio
 vendor/bin/hw/qcrild
@@ -3030,9 +3034,6 @@ vendor/bin/ATFWD-daemon
 vendor/bin/adpl
 vendor/bin/netmgrd
 vendor/bin/port-bridge
-vendor/bin/qrtr-cfg
-vendor/bin/qrtr-lookup
-vendor/bin/qrtr-ns
 vendor/bin/qti
 vendor/bin/rmt_storage
 vendor/bin/ssgqmigd
@@ -3060,7 +3061,6 @@ vendor/lib64/libpdnotifier.so
 vendor/lib64/libqcmaputils.so
 vendor/lib64/libqcrilFramework.so
 vendor/lib64/libqcrildatactl.so
-vendor/lib64/libqrtr.so
 vendor/lib64/libqsocket.so
 vendor/lib64/libril-qc-hal-qmi.so
 vendor/lib64/libril-qc-ltedirectdisc.so
