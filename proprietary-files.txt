@@ -2632,6 +2632,17 @@ vendor/lib64/libqisl.so|0c9649ba7a6c34ca8b6ce25bca22947736451fd1
 vendor/lib64/librmp.so|a5920751a577bac2cb4388af3d024c875dfcf19f
 vendor/lib64/libtzdrmgenprov.so|9c27620c1bef4bf94ba615d4a6d4ac3fe354bb2b
 
+# DRM (Firmware)
+vendor/firmware/widevine.b00
+vendor/firmware/widevine.b01
+vendor/firmware/widevine.b02
+vendor/firmware/widevine.b03
+vendor/firmware/widevine.b04
+vendor/firmware/widevine.b05
+vendor/firmware/widevine.b06
+vendor/firmware/widevine.b07
+vendor/firmware/widevine.mdt
+
 # DRM (HDCP) - from helios-user 14 14-35-10.00-UG-U04-STD-HEL-04 44 release-keys
 vendor/bin/hdcp1prov|56129e60e690c9a04ed30155fd2a460b344e5cc6
 vendor/bin/hdcp2p2prov|1c1bfd10429a77ee4a8bc67cee4b6690517dca9d
