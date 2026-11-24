@@ -49,6 +49,8 @@ lib_fixups: lib_fixups_user_type = {
 blob_fixups: blob_fixups_user_type = {
     'vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc': blob_fixup()
         .regex_replace('    disabled', '    #disabled'),
+    'vendor/etc/init/vendor.oppo.hardware.hypnus@1.0-service.rc': blob_fixup()
+        .regex_replace(r'\non property:init\.svc\.hypnusd=running\n    stop hypnus-hal-1-0\n', ''),
     'vendor/lib/hw/camera.sdm660.so': blob_fixup()
         .binary_regex_replace(b'/system/etc/camera/', b'/vendor/etc/camera/')
         .sig_replace('30 68 4f f4 51 73 c1 68 d0 e9 0d 20', '30 68 4f f4 51 73 c1 68 d0 e9 12 20')
