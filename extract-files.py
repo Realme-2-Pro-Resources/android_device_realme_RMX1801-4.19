@@ -39,10 +39,6 @@ lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
     (
         'com.qualcomm.qti.dpm.api@1.0',
-        'com.qualcomm.qti.uceservice@2.0',
-        'com.qualcomm.qti.uceservice@2.1',
-        'com.qualcomm.qti.uceservice@2.2',
-        'com.qualcomm.qti.uceservice@2.3',
         'vendor.qti.hardware.fm@1.0',
         'vendor.qti.imsrtpservice@3.0',
     ): lib_fixup_vendor_suffix,
@@ -78,13 +74,6 @@ blob_fixups: blob_fixups_user_type = {
         .sig_replace('6e 28 74', 'f0 28 74')
         .sig_replace('74 d1 9a f8 09 00', '74 d1 00 f0 46 b8')
         .sig_replace('08 28 00 f2 a3 80', '08 28 00 f2 6b 80'),
-    'vendor/lib64/libril-qc-hal-qmi.so': blob_fixup()
-        .binary_regex_replace(b'android\\.hardware\\.radio\\.config@1\\.0\\.so',
-                              b'android.hardware.radio.c_shim@1.0.so')
-        .binary_regex_replace(b'android\\.hardware\\.radio\\.config@1\\.1\\.so',
-                              b'android.hardware.radio.c_shim@1.1.so')
-        .binary_regex_replace(b'android\\.hardware\\.radio\\.config@1\\.2\\.so',
-                              b'android.hardware.radio.c_shim@1.2.so'),
     'vendor/lib64/sensors.ssc.so': blob_fixup()
         .sig_replace('39 28 00 40 f9 09 05 80 52', '39 28 00 40 f9 09 1e 80 52')
         .sig_replace('1f b9 01 71 a1', '1f c1 03 71 a1' )
@@ -102,8 +91,7 @@ blob_fixups: blob_fixups_user_type = {
         'system_ext/lib64/lib-imscamera.so',
         'system_ext/lib64/lib-imsvideocodec.so',
     ): blob_fixup()
-        .add_needed('libgui_shim.so')
-        .replace_needed('libqdMetaData.so', 'libqdMetaData.system.so'),
+        .add_needed('libgui_shim.so'),
     (
         'vendor/lib/libmmcamera_pdaf.so',
         'vendor/lib/libmmcamera_pdafcamif.so',

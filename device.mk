@@ -274,10 +274,9 @@ $(call soong_config_set_bool,qtipower,interaction_boost,true)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
-# QCOM
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
-    $(LOCAL_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml
+# QMI
+PRODUCT_PACKAGES += \
+    libqti_vndfwk_detect.vendor
 
 # Radio
 PRODUCT_PACKAGES += \
@@ -286,13 +285,6 @@ PRODUCT_PACKAGES += \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
     qti_telephony_utils.xml
-
-# Radio config wrapper
-PRODUCT_PACKAGES += \
-    android.hardware.radio.c_shim@1.0 \
-    android.hardware.radio.c_shim@1.1 \
-    android.hardware.radio.c_shim@1.2 \
-    android.hardware.radio.config@1.1-service.wrapper
 
 # Recovery
 PRODUCT_PACKAGES += \

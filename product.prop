@@ -1,6 +1,12 @@
 # eBPF
 ro.bpf.kver_override=5.10.239
 
+# IMS
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1 
+persist.dbg.ims_volte_enable=1
+
 # LMKD
 ro.lmk.low=1001
 ro.lmk.medium=800
