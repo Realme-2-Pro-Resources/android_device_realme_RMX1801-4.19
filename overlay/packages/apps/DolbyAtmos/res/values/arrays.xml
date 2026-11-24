@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+    <!-- Dolby Atmos profiles matching vendor/etc/dolby/dax-default.xml -->
+    <string-array name="dolby_profile_entries" translatable="false">
+        <item>Dynamic</item>
+        <item>Movie</item>
+        <item>Music</item>
+        <item>Custom</item>
+    </string-array>
+
+    <string-array name="dolby_profile_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+</resources>

@@ -2585,6 +2585,24 @@ vendor/etc/qdcm_calib_data_oppo18321dpt_nt36672a_1080_2340_video_mode_dsi_panel.
 # Display config
 vendor/etc/OPPO_OLED_AD_calib.cfg
 
+# Dolby - from qssi-user-12-58.2.A.10.126-1-release-keys
+vendor/bin/hw/vendor.dolby.hardware.dms@1.0-service|587cda4d55cc9099e356dfd5d747e689052f932b
+vendor/etc/dolby/dax-default.xml|8c91fd50c8bd9ade952d965032e17d559a2a8dcb
+vendor/etc/init/vendor.dolby.hardware.dms@1.0-service.rc|3f2ef278f56489ffaab9fe3578f86f9c1265de8a
+vendor/etc/media_codecs_dolby_audio.xml|8964c37503282a1430fec616b4c873ec786f3ce0
+vendor/lib/soundfx/libswdap.so|9e3a58c2e0f519e87ac361a640553a256ef550c7
+vendor/lib/libdapparamstorage.so|91ce703da24f3a34931ae652b8a4c005d627a307
+vendor/lib/libstagefright_soft_ac4dec.so|4a9ff6fc400ca8b7bf79e7a1b111908181941394
+vendor/lib/libstagefright_soft_ddpdec.so|4eedfd8449f97672a6c0f7dfc86474f048bee849
+vendor/lib/libstagefrightdolby.so|bd166f2f36429125d32691eae1ad04ea6013b29c
+vendor/lib/vendor.dolby.hardware.dms@1.0.so|0f16b88900b4e2c779ff04b3aca0300107b08a78
+vendor/lib64/soundfx/libswdap.so|a983b89ef02f3039f2e451c66a29721f1db47c4b
+vendor/lib64/libdapparamstorage.so|9479a00e782f9f199d1047cd6d7400f503347ba1
+vendor/lib64/libdlbdsservice.so|30a7dc1f18718a45036d0988afe69afd80875c32
+vendor/lib64/libstagefrightdolby.so|ba67b25117fc5c4c11dd44152faa28b869c8b6f5
+vendor/lib64/vendor.dolby.hardware.dms@1.0-impl.so|19e2ceff93f6d752b71953313e7a32dd5eee8bea
+vendor/lib64/vendor.dolby.hardware.dms@1.0.so|ca3b49a9648c972fbee28795fb009657e8771ad9
+
 # DPM - from sdm660_64-user 11 RKQ1.210406.002 1.022.00 release-keys
 system_ext/bin/dpmd|4662a11c5331919cc08d541a298444ffce18cc1b
 system_ext/etc/dpm/dpm.conf|0db01f277d3ba779abb2170aa798852f018ecd5a

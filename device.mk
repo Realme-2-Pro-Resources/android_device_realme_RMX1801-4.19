@@ -170,6 +170,10 @@ PRODUCT_PACKAGES += \
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
+# Dolby
+PRODUCT_PACKAGES += \
+    DolbyAtmos
+
 # Doze
 PRODUCT_PACKAGES += \
     RealmeParts
