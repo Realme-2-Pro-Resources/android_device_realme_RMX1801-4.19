@@ -46,7 +46,6 @@ vendor/lib64/hw/com.dsi.ant@1.0-impl.so|d81c62439958c309c34bc96bf63232fa3a6481b5
 system/etc/permissions/audiosphere.xml
 system/framework/audiosphere.jar
 vendor/lib/soundfx/libasphere.so
-vendor/lib/soundfx/libdiraceffect.so
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
