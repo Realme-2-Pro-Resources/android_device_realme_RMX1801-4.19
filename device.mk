@@ -148,6 +148,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider-service_32.lineage
 
+$(call soong_config_set_bool,lineage_camera,legacy_jpeg_blob_fixup,true)
+
 # Configstore
 PRODUCT_PACKAGES += \
     disable_configstore
