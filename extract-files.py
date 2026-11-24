@@ -74,6 +74,8 @@ blob_fixups: blob_fixups_user_type = {
         .sig_replace('6e 28 74', 'f0 28 74')
         .sig_replace('74 d1 9a f8 09 00', '74 d1 00 f0 46 b8')
         .sig_replace('08 28 00 f2 a3 80', '08 28 00 f2 6b 80'),
+    'vendor/lib/soundfx/libswdap.so': blob_fixup()
+        .sig_replace('2d e9 f0 4f b5 b0 83 46', '01 20 70 47 00 bf 00 bf'),
     'vendor/lib64/libqmiservices.so': blob_fixup()
         .sig_replace(
             '0B 00 00 00 23 00 0D 00 00 00 24 00 0F 00 00 00 25 00 11 00 00 00 26 00 15 00 00 00 27 00 17 00 16 00 28 00 19 00',
@@ -97,6 +99,8 @@ blob_fixups: blob_fixups_user_type = {
         .sig_replace('1f b9 01 71 a1', '1f c1 03 71 a1' )
         .sig_replace('54 a8 02 16 8b 08 25 40 39 a8', '54 4a 00 00 14 08 25 40 39 a8')
         .sig_replace('7f b8 01 71 01 0b 00 54', '7f b8 01 71 a1 07 00 54'),
+    'vendor/lib64/soundfx/libswdap.so': blob_fixup()
+        .sig_replace('ff 83 04 d1 fd 7b 0e a9', '20 00 80 52 c0 03 5f d6'),
     (
         'vendor/lib/libthread_blur.so',
         'vendor/lib/libVDDualCameraBlurlessAPI.so',
