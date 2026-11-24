@@ -6,7 +6,7 @@
 
 service vendor.oppo.rfsa /vendor/bin/rfsa_daemon
     class core
-    user root
+    user system
     group system
     shutdown critical
     ioprio rt 0
